@@ -1,0 +1,16 @@
+.navPay {
+    border: 2px solid #b08bfb9e;
+    color: #926ae2;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    font-weight: bold;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+.navPay:hover {
+    border: 2px solid #7f5ec2;
+  
+    background-color: #ece2ff8a
+}
