@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { BsChevronRight, BsChevronDown } from "react-icons/bs";
 import "./Navbar.css";
 import Logo from "../../Assets/Images/Logo2.png";
@@ -12,24 +12,43 @@ import { RiPagesLine } from 'react-icons/ri';
 import Button from "../Reusable/Button";
 
 function NavBar() {
+
+
+const [navbar, setNavbar] = useState(false)
+
+const changeNav = () => {
+  if (window.scrollY >= 160) {
+    setNavbar(true);
+  } else {
+    setNavbar(false);
+  }
+};
+
+window.addEventListener('scroll', changeNav)
+
+
   return (
     <div className="navbar">
-      <div className="nav_head">
+      <div className={navbar ? "nav_head nav_head-hidden" : "nav_head"}>
         <div className="logo_holder">
           <img alt="" src={Logo} />
         </div>
         <div className="head_link-wrapper">
           <li className="nav_head-button">RENTAL OWNER LOGIN</li>
+          <div className="head-seperate"></div>
           <li className="nav_head-button">RESIDENT LOGIN</li>
+          <div className="head-seperate"></div>
           <li className="nav_head-button">BOARD MEMBER LOGIN</li>
+          <div className="head-seperate"></div>
+          <li className="nav_head-button">MAKE A PAYMENT</li>
           
         </div>
-        <div className="topNav_button-wrapper">
+        {/* <div className="topNav_button-wrapper">
             <Button styleType="navPay">
                 MAKE A PAYMENT
             </Button>
 
-        </div>
+        </div> */}
         <div className="nav_pay-button"></div>
       </div>
       <div className="nav_main">
