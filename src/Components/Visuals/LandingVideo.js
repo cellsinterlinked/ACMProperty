@@ -25,11 +25,16 @@ function dimBg () {
       <div className="bg-overlay" style={{opacity: opacity }}></div>
      <NavBar />
       <div className="home-text">
-        <h1>MEET THE EXPERTS</h1>
-        <p>YOUR SOUTHERN INDIANA PROPERTY MANAGERS</p>
+        <h1>Meet The Experts</h1>
+        <div className="lineContainer">
+        <div className="leftLine"></div>
+        <div className="lineCircle"></div>
+        <div className="rightLine"></div>
+
+        </div>
+        <p>Your Southern Indiana Property Managers</p>
       </div>
 
-      <div className="home-btn">SEE WHATS HAPPENING</div>
     </div>
   );
 }

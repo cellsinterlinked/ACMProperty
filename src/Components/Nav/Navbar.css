@@ -8,6 +8,16 @@
     src: url("../../Assets//Fonts/PPPierSans-Regular.otf")
 }
 
+@font-face {
+    font-family: 'BarqBold';
+    src: url('../../Assets//Fonts/Barques/Barques-Bold.otf');
+}
+
+@font-face {
+    font-family: 'RippleBold';
+    src: url('../../Assets/Fonts/Ripple/Ripple-Bold.otf');
+}
+
 
 .navbar {
     width: 100%;
@@ -67,6 +77,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to left, #a884f2, #202344 70%);
+    /* background: linear-gradient(145deg, rgba(151,76,255,1) 45%, rgba(103,228,255,1) 99%); */
     width: 100%;
 }
 
@@ -87,8 +98,8 @@
     margin: 0rem;
     padding-left: 1.1rem;
     padding-right: 1.1rem;
-    font-family: 'PierReg';
-    letter-spacing: 4px;
+    font-family: 'RippleBold';
+    letter-spacing: 2px;
     font-size: .8rem;
     color: rgb(30, 21, 78);
     cursor: pointer;
@@ -112,8 +123,8 @@
   
     padding-left: .4rem;
     padding-right: 0.4rem;
-    font-family: 'PierReg';
-    letter-spacing: 4px;
+    font-family: 'RippleBold';
+    letter-spacing: 2px;
     font-size: .8rem;
     color: rgb(255, 255, 255);
     cursor: pointer;

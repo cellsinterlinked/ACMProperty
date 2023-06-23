@@ -1,10 +1,15 @@
 import React from "react";
 import "./Welcome.css";
+import welcomeImage from '../Assets/Images/entrepreneur-smiling-during-business-video-call-2021-08-30-14-12-15-utc.JPG';
 
 const Welcome = () => {
   return (
     <div className="welcome_wrapper">
       <div className="welcome_text">
+        <div className="welcome_image-holder">
+          <img alt="" src={welcomeImage}/>
+        </div>
+        <div>
         <h2>Welcome to ACM Property Management, LLC</h2>
         <p>
           ACM Property Management is a full-service property management company
@@ -18,7 +23,13 @@ const Welcome = () => {
           approach allows them to efficiently streamline the day-to-day work,
           resulting in excellent services to their clients.
         </p>
+
+        </div>
       </div>
+
+
+
+
     </div>
   );
 };

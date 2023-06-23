@@ -1,0 +1,86 @@
+@font-face {
+    font-family: RippleBold;
+    src: url('../Assets/Fonts/Ripple/Ripple-Bold.otf');
+}
+
+@font-face {
+    font-family: RippleLight;
+    src: url('../Assets//Fonts/Ripple/Ripple-Thin.otf');
+}
+
+@font-face {
+    font-family: RippleMed;
+    src: url('../Assets/Fonts/Ripple/Ripple-Medium.otf');
+}
+
+
+
+
+
+
+.reasons_wrapper {
+    height: 140vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20rem;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.reasons_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reasons_content h2 {
+    text-align: left;
+        font-family: RippleBold;
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        color: rgb(12, 0, 33);
+}
+
+.sphere_wrapper {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sphere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    height: 19rem;
+    width: 19rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.754);
+    background: linear-gradient(to left, #a984f2, #202344 70%);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.sphere h1 {
+    font-size: 1.7rem;
+    font-family: RippleBold;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
+
+.sphere p {
+    font-size: 1rem;
+    font-family: RippleBold;
+    margin: 0px;
+}
