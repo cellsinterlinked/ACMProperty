@@ -14,11 +14,76 @@ body {
   --barqbold: 'BarquesBold', sans-serif
 
 
-  --iblue: rgb(67,64,105)
-  --iblack: rgb(22,17,21)
-  --ired: rgb(133,23,24)
-  --igold: rgb(255,186,64)
-  --inavy: rgb(40,38,25)
+  --idarkblue: rgb(1,6,38)
+  --igrey: rgb(240,240,242)
+  --iblue: rgb(50,67,89)
+  --igold: rgb(242,227,153)
+  --itan: rgb(217,196,156)
+
+  --iconColor: #563990;
+  
+  --gradient: linear-gradient(to left, #a884f2, #202344 70%);
+
+ --gradientoff: linear-gradient(to bottom, #1A1B1B, #272F36 30%);
+
+  --cardshadow: 2px 2px 4px rgba(0, 0, 0, 0.367);
+
+  .desktop-padding {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+
+  .banner {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100px;
+    width: auto;
+    background: var(--gradient);
+    position: relative;
+}
+
+.banner-end {
+   
+        position: absolute;
+        top: 0rem;
+        right: -5rem;;
+        width: 5rem; 
+        height: 0; 
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent ;
+        
+        border-left: 50px solid #a884f2;
+      
+}
+
+.banner-start-top {
+    position: absolute;
+    top: 0rem;
+    left: -6.2rem;
+    width: 0; 
+    height: 0; 
+    border-right: 50px solid #202344;
+    border-left: 50px solid transparent ;
+    
+    border-bottom: 50px solid transparent;
+}
+
+.banner-start-bottom {
+    position: absolute;
+    bottom: 0rem;
+    left: -6.2rem;
+    width: 0; 
+    height: 0; 
+    border-right: 50px solid #202344;
+    border-left: 50px solid transparent ;
+    
+    border-top: 50px solid transparent;
+}
+
+
 }
 
 code {

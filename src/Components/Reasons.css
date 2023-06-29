@@ -19,14 +19,14 @@
 
 
 .reasons_wrapper {
-    height: 140vh;
+    height: 110vh;
     width: 100%;
-    background-color: white;
+    background: var(--gradient);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 20rem;
+    padding-top: 70rem;
     padding-left: 20%;
     padding-right: 20%;
 
@@ -36,21 +36,28 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    /* background-color: var(--gradient); */
 }
 
 .reasons_content h2 {
     text-align: left;
-        font-family: RippleBold;
+        /* font-family: RippleBold; */
         margin-bottom: 2rem;
         font-size: 2.4rem;
-        letter-spacing: 2px;
-        color: rgb(12, 0, 33);
+        letter-spacing: 1px;
+        color: white;
+}
+
+.reasons_content p {
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: RippleMed
 }
 
 .sphere_wrapper {
-    margin-top: 6rem;
+    margin-top: 9rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -62,25 +69,83 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 5rem;
-    height: 19rem;
+    height: 24rem;
     width: 19rem;
-    border-radius: 50%;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.754);
-    background: linear-gradient(to left, #a984f2, #202344 70%);
-    padding-left: 8px;
-    padding-right: 8px;
+    border-radius: 10px;
+    box-shadow: var(--cardshadow);
+    /* background: linear-gradient(to left, #a984f2, #202344 70%); */
+    background-color: rgb(255, 255, 255);
+    /* padding-left: 8px;
+    padding-right: 8px; */
+    overflow: hidden;
+    color: black;
+    text-align: center;
 }
 
-.sphere h1 {
-    font-size: 1.7rem;
-    font-family: RippleBold;
+.sphere h2 {
+    font-size: 1.3rem;
+    /* font-family: RippleMed; */
     margin: 0px;
     margin-bottom: 1rem;
+    color: rgb(21, 21, 21);
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .sphere p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: RippleBold;
     margin: 0px;
+    text-align:center;
+    margin-top: 20px;
+    color: rgb(105, 20, 180);
+    margin-left: 8px;
+    margin-right: 8px;
+    letter-spacing: 0px;;
+}
+
+.card-half {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 10rem;
+
+}
+.card-third {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+
+}
+
+.reason-icon-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+}
+
+.reason-icon {
+    height: 4rem;
+    width: 4rem;
+    color: rgb(81, 0, 128);
+}
+
+.reason_image-wrapper {
+    height: 14rem;
+    width: 100%;
+    overflow: hidden;
+
+
+}
+
+.reason_image-wrapper img {
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 120%;
+    max-width: 120%;
+    object-fit: cover;
 }

@@ -1,147 +1,90 @@
-import React, {useEffect, useState} from "react";
-import { BsChevronRight, BsChevronDown } from "react-icons/bs";
+import React, { useState } from "react";
 import "./Navbar.css";
-import Logo from "../../Assets/Images/Logo2.png";
 import { FaHome } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { HiOutlineCurrencyDollar } from "react-icons/hi";
-import { BsArrowRight } from "react-icons/bs";
-import { GrTechnology } from 'react-icons/gr';
-import { GiPortal} from 'react-icons/gi';
-import { RiPagesLine } from 'react-icons/ri';
-import Button from "../Reusable/Button";
+import { GiPortal } from "react-icons/gi";
+import { RiPagesLine } from "react-icons/ri";
+import NavHead from "./NavHead";
+import NavButton from "./NavButton";
 
 function NavBar() {
+  const [navbar, setNavbar] = useState(false);
 
+  const changeNav = () => {
+    if (window.scrollY >= 160) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
 
-const [navbar, setNavbar] = useState(false)
-
-const changeNav = () => {
-  if (window.scrollY >= 160) {
-    setNavbar(true);
-  } else {
-    setNavbar(false);
-  }
-};
-
-window.addEventListener('scroll', changeNav)
-
+  window.addEventListener("scroll", changeNav);
 
   return (
     <div className="navbar">
-      <div className={navbar ? "nav_head nav_head-hidden" : "nav_head"}>
-        <div className="logo_holder">
-          <img alt="" src={Logo} />
-        </div>
-        <div className="head_link-wrapper">
-          <li className="nav_head-button">RENTAL OWNER LOGIN</li>
-          <div className="head-seperate"></div>
-          <li className="nav_head-button">RESIDENT LOGIN</li>
-          <div className="head-seperate"></div>
-          <li className="nav_head-button">BOARD MEMBER LOGIN</li>
-          <div className="head-seperate"></div>
-          <li className="nav_head-button">MAKE A PAYMENT</li>
-          
-        </div>
-        {/* <div className="topNav_button-wrapper">
-            <Button styleType="navPay">
-                MAKE A PAYMENT
-            </Button>
+      <NavHead navbar={navbar} />
 
-        </div> */}
-        <div className="nav_pay-button"></div>
-      </div>
       <div className="nav_main">
-        <li className="nav-button">HOME</li>
-        <li className="nav-button">AVAILABLE UNITS</li>
-        <li className="nav-button">
-          SERVICES
-          <BsChevronDown className="nav_chevron-down" />
-          <ul className="sub-menu">
-            <div>
-              <div className="arrow-up"></div>
-            </div>
-            <li className="sub-category">
-              <HiOutlineCurrencyDollar className="nav_sub-icon" />
-              Sales
-              <div>
-               
-                  <BsArrowRight className="nav-arrow" />
-                
-              </div>
-            </li>
-            <li className="sub-category">
-              <MdManageAccounts className="nav_sub-icon" />
-              Property Management
-              <div>
-              <BsArrowRight className="nav-arrow" />
+        <NavButton children="HOME" destination="/" />
+        <NavButton children="AVAILABLE UNITS" destination="https://acmpm.managebuilding.com/Resident/public/home" />
 
-              </div>
-            </li>
-            <li className="sub-category">
-              <FaHome className="nav_sub-icon" />
-              HOA Management
-              <div>
-              <BsArrowRight className="nav-arrow" />
+        <NavButton
+          children="SERVICES"
+          expand={true}
+          sub={[
+            {
+              title: "Sales",
+              icon: <HiOutlineCurrencyDollar className="nav_sub-icon" destination="/sales" />,
+            },
+            {
+              title: "Property Management",
+              icon: <MdManageAccounts className="nav_sub-icon" destination="/propertymanagement"/>,
+            },
+            {
+              title: "HOA Management",
+              icon: <FaHome className="nav_sub-icon" destination="/hoamanagement" />,
+            },
+          ]}
+        />
 
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li className="nav-button">
-          RENTAL OWNERS
-          <BsChevronDown className="nav_chevron-down" />
-          <ul className="sub-menu">
-            <div>
-              <div className="arrow-up"></div>
-            </div>
-            <li className="sub-category">
-            <RiPagesLine className="nav_sub-icon" />
-                Resources
-                <div>
-              <BsArrowRight className="nav-arrow" />
+        <NavButton
+          children="RENTAL OWNERS"
+          expand={true}
+          sub={[
+            {
+              title: "Resources",
+              icon: <RiPagesLine className="nav_sub-icon" />,
+              destination: "/ownerresources"
+            },
+            {
+              title: "Rental Owner Portal",
+              icon: <GiPortal className="nav_sub-icon" />,
+              destination: "https://acmpm.managebuilding.com/manager/"
+            },
+          ]}
+        />
 
-              </div>
-                </li>
-            <li className="sub-category">
-            <GiPortal className="nav_sub-icon" />
-                Rental Owner Portal
-            <div>
-              <BsArrowRight className="nav-arrow" />
+        <NavButton
+          children="RESIDENTS"
+          expand={true}
+          sub={[
+            {
+              title: "Resources",
+              icon: <RiPagesLine className="nav_sub-icon" />,
+              destination: "/residentresources"
+            },
+            {
+              title: "Resident Portal",
+              icon: <GiPortal className="nav_sub-icon" />,
+              destination: "https://acmpm.managebuilding.com/Resident/portal/login"
+            },
+          ]}
+        />
 
-              </div>
-            </li>
-          </ul>
-        </li>
-
-        <li className="nav-button">
-          RESIDENTS
-          <BsChevronDown className="nav_chevron-down" />
-          <ul className="sub-menu">
-            <div>
-              <div className="arrow-up"></div>
-            </div>
-            <li className="sub-category">
-             <RiPagesLine className="nav_sub-icon" />
-            Resources
-            <div>
-              <BsArrowRight className="nav-arrow" />
-
-              </div>
-            </li>
-            <li className="sub-category">
-            <GiPortal className="nav_sub-icon" />
-                Resident Portal
-                <div>
-              <BsArrowRight className="nav-arrow" />
-
-              </div>
-                </li>
-          </ul>
-        </li>
-        <li className="nav-button">LOCAL SERVICES</li>
-        <li className="nav-button">ABOUT US</li>
-        <li className="nav-button">CONTACT US</li>
+        <NavButton children="LOCAL SERVICES" destination="/services" />
+        <NavButton children="ABOUT US" destination="/about" />
+        <NavButton children="CONTACT US" destination="/contact"/>
       </div>
     </div>
   );

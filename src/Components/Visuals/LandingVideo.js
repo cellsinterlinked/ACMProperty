@@ -23,7 +23,7 @@ function dimBg () {
     <div className="landingpage">
       <video src={BgVideo} autoPlay muted loop class="video-bg" />
       <div className="bg-overlay" style={{opacity: opacity }}></div>
-     <NavBar />
+     {/* <NavBar /> */}
       <div className="home-text">
         <h1>Meet The Experts</h1>
         <div className="lineContainer">

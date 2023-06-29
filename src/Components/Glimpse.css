@@ -1,0 +1,150 @@
+@font-face {
+    font-family: RippleBold;
+    src: url('../Assets/Fonts/Ripple/Ripple-Bold.otf');
+}
+
+@font-face {
+    font-family: RippleLight;
+    src: url('../Assets//Fonts/Ripple/Ripple-Thin.otf');
+}
+
+@font-face {
+    font-family: RippleMed;
+    src: url('../Assets/Fonts/Ripple/Ripple-Medium.otf');
+}
+
+
+
+
+.glimpse-wrapper {
+    padding-top: 15rem;
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.glimpse-content {
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.glimpse-content h2 {
+    text-align: start;
+    font-size: 2.4rem;
+    color: white;
+    font-family: RippleLight;
+
+}
+
+.glimpse-list {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.glimpse_box {
+    border-radius: 1rem;
+    height: 14rem;
+    width: 14rem;
+    box-shadow: var(--cardshadow);
+    margin: 1rem;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient)
+ 
+}
+
+.glimpse-inner {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1rem;
+    flex-direction: column;
+}
+
+.glimpse_box h2 {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    font-family: RippleMed;
+    
+}
+
+.glimpse-icon-wrapper {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.glimpse-icon {
+    height: 3rem;
+    width: 3rem;
+    color: rgb(73, 0, 128);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 100px;
+    width: auto;
+    background: var(--gradient);
+    position: relative;
+}
+
+.banner-end {
+   
+        position: absolute;
+        top: 0rem;
+        right: -5rem;;
+        width: 5rem; 
+        height: 0; 
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent ;
+        
+        border-left: 50px solid #a884f2;
+      
+}
+
+.banner-start-top {
+    position: absolute;
+    top: 0rem;
+    left: -6.2rem;
+    width: 0; 
+    height: 0; 
+    border-right: 50px solid #202344;
+    border-left: 50px solid transparent ;
+    
+    border-bottom: 50px solid transparent;
+}
+
+.banner-start-bottom {
+    position: absolute;
+    bottom: 0rem;
+    left: -6.2rem;
+    width: 0; 
+    height: 0; 
+    border-right: 50px solid #202344;
+    border-left: 50px solid transparent ;
+    
+    border-top: 50px solid transparent;
+}

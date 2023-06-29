@@ -1,0 +1,109 @@
+@font-face {
+    font-family: RippleBold;
+    src: url('../../Assets/Fonts/Ripple/Ripple-Bold.otf');
+}
+
+@font-face {
+    font-family: RippleLight;
+    src: url('../../Assets//Fonts/Ripple/Ripple-Thin.otf');
+}
+
+@font-face {
+    font-family: RippleMed;
+    src: url('../../Assets/Fonts/Ripple/Ripple-Medium.otf');
+}
+
+
+
+
+
+.areas-wrapper {
+    width: 100%;
+    min-height: 50vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.areas-wrapper h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.6rem;
+    font-family: RippleMed;
+    margin: 0px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.areas-content {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+
+}
+
+.areas-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 2rem;
+    padding-bottom: 4rem;
+
+}
+
+.areas-shadow {
+    border-radius: 2rem;
+    width: 48%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: var(--gradient);
+    padding-bottom: 10px;
+    padding-right: 10px
+}
+
+.areas-info li {
+    font-size: 1.2rem;
+    font-family: RippleMed;
+    letter-spacing: opx;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.areas-info p {
+    margin-top: 2rem;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.areas-info ul {
+    margin-top: 3rem;
+}
+
+.areas-map-wrapper {
+    width: 50%;
+}
+
+.areas-map-wrapper img {
+    max-width: 30rem;
+}
+
+.areas-info h2 {
+    margin-top: 2rem;
+    font-family: RippleMed;
+}
+
