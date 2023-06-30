@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: RippleBold;
+    src: url('../../Assets/Fonts/Ripple/Ripple-Bold.otf');
+}
+
+@font-face {
+    font-family: RippleLight;
+    src: url('../../Assets//Fonts/Ripple/Ripple-Thin.otf');
+}
+
+@font-face {
+    font-family: RippleMed;
+    src: url('../../Assets/Fonts/Ripple/Ripple-Medium.otf');
+}
+
+
+
+.contact-form {
+  
+    border-radius: 1.5rem;
+    height: 50rem;
+    width: 40rem;
+    background-color: white;
+    box-shadow: var(--cardshadow);
+    padding: 4rem;
+    padding-top: 2rem;
+   
+    letter-spacing: 0px;
+}
+
+.contact-form h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: left;
+    color: black;
+}
+
+.contact-form p {
+    color: rgb(116, 116, 116);
+    font-size: 1rem;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-family: RippleMed;
+
+}
+
+.contact-feature {
+ margin-bottom: 10px;
+ background-color: #a884f2;
+ width: 13rem;
+ border-radius: 5px;
+ 
+}
+
+.contact-feature p {
+    margin: 8px;
+    color: rgb(236, 236, 236);
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-family: RippleBold;
+
+}

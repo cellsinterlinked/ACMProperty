@@ -24,7 +24,13 @@ body {
   
   --gradient: linear-gradient(to left, #a884f2, #202344 70%);
 
- --gradientoff: linear-gradient(to bottom, #1A1B1B, #272F36 30%);
+  --textgradient: linear-gradient(to left, #bfa3f7, #482590 70%);
+
+  --redgradient: linear-gradient(to left, #d14848, #5c0505 70%);
+
+  --greengradient: linear-gradient(to left, #54cf69, #055c0e 70%);
+
+ --gradientoff: linear-gradient(to bottom, #0d0d0d, #2f2c2f 70%);
 
   --cardshadow: 2px 2px 4px rgba(0, 0, 0, 0.367);
 

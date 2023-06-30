@@ -1,0 +1,22 @@
+.contact-area-style {
+    width: 100%;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #52525278;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    display:flex;
+    margin-bottom: 2rem;
+    transition: 300ms ease;
+    
+}
+
+.contact-area-style:focus {
+    border-bottom: 1px solid #7d3cff 
+}
+
+.contact-area-style:focus:placeholder-shown {
+    color: #3e0e9e 
+}

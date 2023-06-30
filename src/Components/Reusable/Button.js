@@ -1,11 +1,11 @@
 import './Button.css';
 import React from 'react'
 
-const Button = ({children, styleType}) => {
+const Button = ({children, styleType, disabled}) => {
     return(
-        <div className={`button-wrapper ${styleType}`} >
+        <button disabled={disabled} className={`button-wrapper ${styleType}`} >
             {children}
-        </div>
+        </button>
     )
 }
 

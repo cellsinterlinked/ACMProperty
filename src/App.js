@@ -11,10 +11,14 @@ import ResidentResources from './Pages/ResidentResources';
 import About from './Pages/About';
 import LocalServices from './Pages/LocalServices';
 import Survey from './Pages/Survey';
+import Premium from './Pages/Premium';
+import NavBar from './Components/Nav/Navbar';
+import Footer from './Components/Nav/Footer';
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/sales" element={<Sales />} />
@@ -26,11 +30,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/localservices" element={<LocalServices />} />
         <Route path="/survey" element={<Survey />} />
+        <Route path="/premium" element={<Premium />} />
+
 
         
        
       </Routes>
-     
+     <Footer />
     </div>
   );
 }
