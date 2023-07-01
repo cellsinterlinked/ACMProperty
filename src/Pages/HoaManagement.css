@@ -1,0 +1,229 @@
+@font-face {
+    font-family: RippleBold;
+    src: url('./../Assets/Fonts/Ripple/Ripple-Bold.otf');
+}
+
+@font-face {
+    font-family: RippleLight;
+    src: url('./../Assets//Fonts/Ripple/Ripple-Thin.otf');
+}
+
+@font-face {
+    font-family: RippleMed;
+    src: url('./../Assets/Fonts/Ripple/Ripple-Medium.otf');
+}
+
+
+
+.h-management_wrapper {
+    padding-top: 11rem;
+}
+
+.h-management-header {
+    position: relative;
+    height: 33rem;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    /* background:var(--gradient) */
+    background: var(--gradientoff);
+    padding-bottom: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-head-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.h-head-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* border: 1px solid black; */
+}
+
+.h-head-image {
+    width: 35rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.h-head-image img {
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+
+    object-fit: cover;
+}
+
+.h-management-header h2 {
+    font-size: 2.6rem;
+    color: white;
+    
+}
+
+.h-management-header p {
+    font-size: 1.1rem;
+    letter-spacing: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.h-head-zazz {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.h-management-details {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: -7rem;
+    display :flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.h-detail {
+    height: 12rem;
+    width: 23rem;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flext-start;
+    text-align: left;
+    justify-content: center;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: var(--cardshadow);
+    border-radius: 1.3rem;
+}
+
+
+.h-detail h2 {
+    color: black;
+    font-size: 1.2rem;
+    height: 50%;
+}
+.h-detail p {
+    color: rgb(63, 63, 63);
+    letter-spacing: 0px;
+    font-size: 1rem;
+    font-family: RippleMed;
+    height: 50%;
+
+}
+
+.hoa-pt-2 {
+    padding-top: 5rem;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 5rem;
+    height: 60rem;
+    
+}
+
+.hoa-services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    text-align: left;
+   
+}
+
+.hoa-form-wrapper {
+    width: 50%; 
+    /* height: 100%; */
+  
+}
+
+.hoa-services-list li {
+    text-decoration: none;
+    line-height: 3rem;
+    font-size: 1.3rem;
+   
+}
+
+.hoa-services-list h2 {
+    font-size: 2.2rem;
+}
+
+.hoa-services-list p {
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(99, 99, 99);
+    max-width: 35rem;
+}
+
+.hoa-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 80%;
+    background: var(--gradient);
+    text-align: left;
+    /* border-radius: 2rem; */
+    padding: 4rem;
+}
+
+.hoa-form h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hoa-form p {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    max-width: 30rem;
+}
+
+.hoa-pizzazz {
+    color: rgb(135, 135, 135);
+}
+
+.location-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap:nowrap;
+    width: 100%;
+
+}
+
+
+

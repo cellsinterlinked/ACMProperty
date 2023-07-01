@@ -14,6 +14,8 @@ import Survey from './Pages/Survey';
 import Premium from './Pages/Premium';
 import NavBar from './Components/Nav/Navbar';
 import Footer from './Components/Nav/Footer';
+import Basic from './Pages/Basic';
+import Standard from './Pages/Standard';
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
         <Route path="/localservices" element={<LocalServices />} />
         <Route path="/survey" element={<Survey />} />
         <Route path="/premium" element={<Premium />} />
+        <Route path="/basic" element={<Basic />} />
+        <Route path="/standard" element={<Standard />} />
+        
 
 
         

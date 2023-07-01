@@ -7,7 +7,7 @@ import Image1 from '../Assets/Images/Home Checking.png';
 const About = () => {
   return (
     <>
-      <NavBar />
+
       <div className="about-wrapper">
         <div className="about-header">
           <h2>About Us</h2>
@@ -44,7 +44,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
+
     </>
   );
 };

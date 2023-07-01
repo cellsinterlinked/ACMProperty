@@ -1,7 +1,5 @@
 import React from "react";
 import "./OwnerResources.css";
-import NavBar from "../Components/Nav/Navbar";
-import Footer from "../Components/Nav/Footer";
 import Button from "../Components/Reusable/Button";
 import Image1 from "../Assets/Images/CRM.png";
 import Image2 from '../Assets/Images/Tax 2.png';
@@ -12,7 +10,7 @@ const OwnerResources = () => {
 
   return (
     <>
-      <NavBar />
+
       <div className="o-resources_wrapper">
         <div className="resource-head desktop-padding">
           <div className="r-head-box1">
@@ -82,7 +80,6 @@ const OwnerResources = () => {
 
       <div style={{marginBottom: "4rem"}}></div>
 
-      <Footer />
     </>
   );
 };

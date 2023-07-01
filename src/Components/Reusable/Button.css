@@ -114,3 +114,22 @@
     background-color: black;
 }
 
+
+
+.hoa-proposal-button {
+    width: 100%;
+    height: 3rem;
+    background: #a884f2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: RippleBold;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    margin-top: 3rem;
+    border: 1px solid white;
+}

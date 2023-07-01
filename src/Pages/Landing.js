@@ -18,7 +18,7 @@ function Landing () {
 
     return(
         <>
-       <NavBar />
+ 
         <LandingVideo />
         <Welcome />
        <Reasons />
@@ -26,7 +26,7 @@ function Landing () {
        <Reviews />
        <Areas />
        <PreFooter />
-       <Footer />
+
         </>
     )
 }

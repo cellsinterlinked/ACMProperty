@@ -20,3 +20,61 @@
 .contact-style:focus:placeholder-shown {
     color: #3e0e9e 
 }
+
+.hoa-style {
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: white;
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+    
+}
+
+.hoa-style::placeholder {
+    color: white;
+}
+
+.hoa-style-med {
+    width: 56%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: white;
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+    
+}
+
+.hoa-style-med::placeholder {
+    color: white;
+}
+
+.hoa-style-sm {
+    width: 20%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: white;
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+    margin-left: 2%;
+    
+}
+
+.hoa-style-sm::placeholder {
+    color: white;
+}
