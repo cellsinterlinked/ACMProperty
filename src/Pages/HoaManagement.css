@@ -187,34 +187,6 @@
     max-width: 35rem;
 }
 
-.hoa-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    width: 80%;
-    background: var(--gradient);
-    text-align: left;
-    /* border-radius: 2rem; */
-    padding: 4rem;
-}
-
-.hoa-form h2 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.hoa-form p {
-    font-size: 1rem;
-    letter-spacing: 0px;
-    max-width: 30rem;
-}
-
-.hoa-pizzazz {
-    color: rgb(135, 135, 135);
-}
 
 .location-info-wrapper {
     display: flex;
@@ -226,4 +198,17 @@
 }
 
 
-
+.hoa-pt3 {
+    padding-top: 0rem;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 5rem;
+    min-height: 60rem;
+    background-color: rgb(231, 231, 231);
+    
+}

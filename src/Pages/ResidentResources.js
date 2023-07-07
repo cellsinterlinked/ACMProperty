@@ -1,7 +1,5 @@
 import React from "react";
 import "./ResidentResources.css";
-import NavBar from "../Components/Nav/Navbar";
-import Footer from "../Components/Nav/Footer";
 import Button from "../Components/Reusable/Button";
 import Image1 from "../Assets/Images/85 - ONLINE PAYMENT.png";
 import Image2 from "../Assets/Images/VNU_M652_02.png";
@@ -12,7 +10,6 @@ const ResidentResources = () => {
   };
   return (
     <>
-      <NavBar />
       <div className="o-resources_wrapper">
         <div className="resource-head desktop-padding">
           <div className="r-head-box1">
@@ -47,7 +44,10 @@ const ResidentResources = () => {
             <div className="perks-box">
               <div className="perks-box-left">
                 <h2>Perks & Features</h2>
-                <p>- Make cash payments at local stores such as Walmart, Casey's CGVS, Walgreens and more!</p>
+                <p>
+                  - Make cash payments at local stores such as Walmart, Casey's
+                  CGVS, Walgreens and more!
+                </p>
                 <p>- Mobile App</p>
                 <p>- Rent Reporting</p>
                 <p>- Renters Insurance</p>
@@ -81,7 +81,6 @@ const ResidentResources = () => {
         </div>
       </div>
       <div style={{ marginBottom: "4rem" }}></div>
-      <Footer />
     </>
   );
 };
