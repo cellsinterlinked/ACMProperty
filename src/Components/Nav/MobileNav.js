@@ -1,15 +1,23 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./MobileNav.css";
 import { FaHome } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { HiOutlineCurrencyDollar } from "react-icons/hi";
 import { GiPortal } from "react-icons/gi";
 import { RiPagesLine } from "react-icons/ri";
-import NavHead from "./NavHead";
 import NavButton from "./NavButton";
+import Logo from '../../Assets/Images/Logo3.png';
+import Backdrop from './Backdrop'
+import SideDrawer from "./SideDrawer";
+import MobileList from "./MobileList";
 
-function NavBar() {
+function MobileNav() {
   const [navbar, setNavbar] = useState(false);
+  const [open, setOpen] = useState(false)
+
+  const toggle = () => {
+    setOpen(!open)
+  }
 
   const changeNav = () => {
     if (window.scrollY >= 160) {
@@ -22,10 +30,21 @@ function NavBar() {
   window.addEventListener("scroll", changeNav);
 
   return (
-    <div className="navbar">
-      <NavHead navbar={navbar} />
+    <div className="mobile-nav">
 
-      <div className="nav_main">
+    {open && <Backdrop onClick={toggle} />}
+    <SideDrawer show={open} children={<MobileList />} toggle={toggle} />
+       <div className="mobile-logo_holder">
+          <img alt="" src={Logo} />
+        </div>
+
+      <div className="mobile-hamburger" onClick={toggle}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* <div className="mobile-nav_main">
         <NavButton children="HOME" destination="/" />
         <NavButton children="AVAILABLE UNITS" destination="https://acmpm.managebuilding.com/Resident/public/home" />
 
@@ -35,17 +54,17 @@ function NavBar() {
           sub={[
             {
               title: "Sales",
-              icon: <HiOutlineCurrencyDollar className="nav_sub-icon" />,
+              icon: <HiOutlineCurrencyDollar className="mobile-nav_sub-icon" />,
               destination:"/sales"
             },
             {
               title: "Property Management",
-              icon: <MdManageAccounts className="nav_sub-icon"/>,
+              icon: <MdManageAccounts className="mobile-nav_sub-icon"/>,
               destination:"/propertymanagement"
             },
             {
               title: "HOA Management",
-              icon: <FaHome className="nav_sub-icon" />,
+              icon: <FaHome className="mobile-nav_sub-icon" />,
               destination:"/hoamanagement"
             },
           ]}
@@ -57,12 +76,12 @@ function NavBar() {
           sub={[
             {
               title: "Resources",
-              icon: <RiPagesLine className="nav_sub-icon" />,
+              icon: <RiPagesLine className="mobile-nav_sub-icon" />,
               destination: "/ownerresources"
             },
             {
               title: "Rental Owner Portal",
-              icon: <GiPortal className="nav_sub-icon" />,
+              icon: <GiPortal className="mobile-nav_sub-icon" />,
               destination: "https://acmpm.managebuilding.com/manager/"
             },
           ]}
@@ -74,12 +93,12 @@ function NavBar() {
           sub={[
             {
               title: "Resources",
-              icon: <RiPagesLine className="nav_sub-icon" />,
+              icon: <RiPagesLine className="mobile-nav_sub-icon" />,
               destination: "/residentresources"
             },
             {
               title: "Resident Portal",
-              icon: <GiPortal className="nav_sub-icon" />,
+              icon: <GiPortal className="mobile-nav_sub-icon" />,
               destination: "https://acmpm.managebuilding.com/Resident/portal/login"
             },
           ]}
@@ -88,9 +107,9 @@ function NavBar() {
         <NavButton children="LOCAL SERVICES" destination="/services" />
         <NavButton children="ABOUT US" destination="/about" />
         <NavButton children="CONTACT US" destination="/contact"/>
-      </div>
+      </div> */}
     </div>
   );
 }
 
-export default NavBar;
+export default MobileNav;

@@ -1,4 +1,12 @@
 
+
+@font-face {
+    font-family: NormalLight;
+    src: url('../../Assets//Fonts/Amenti/Amenti-Medium.ttf');
+}
+
+
+
 .nav-button {
     width: auto;
     margin-left: 1rem;
@@ -6,22 +14,26 @@
     text-decoration: none;
     padding-left: .4rem;
     padding-right: 0.4rem;
-    font-family: 'RippleBold';
+    font-family: 'NormalLight';
     letter-spacing: 1px;
-    font-size: .8rem;
+    font-size: .9rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1s;
+    transition: 300ms;
     border-left: 1px solid rgba(255, 255, 255, 0);
     border-right: 1px solid rgba(255, 255, 255, 0);
     border-top: 1px solid rgba(255, 255, 255, 0);
     background-color: rgba(0, 0, 0, 0);
     position: relative;
   
+}
+
+.nav-button:hover {
+    color: #61b9bc
 }
 
 

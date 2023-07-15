@@ -16,10 +16,12 @@ import NavBar from './Components/Nav/Navbar';
 import Footer from './Components/Nav/Footer';
 import Basic from './Pages/Basic';
 import Standard from './Pages/Standard';
+import MobileNav from './Components/Nav/MobileNav';
 
 function App() {
   return (
     <div className="App">
+      <MobileNav />
       <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />

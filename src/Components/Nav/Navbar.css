@@ -34,12 +34,18 @@
     
 }
 
+@media(max-width: 1200px) {
+    .navbar {
+        display:none;
+    }
+}
+
 .nav_main {
     height: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--gradient);
+    background: linear-gradient(to left, #2f1444, #441b98, #2f1444);
     /* background: linear-gradient(145deg, rgba(151,76,255,1) 45%, rgba(103,228,255,1) 99%); */
     width: 100%;
 }

@@ -1,0 +1,82 @@
+.modal {
+    z-index: 300;
+    position: fixed;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 15rem;
+    min-height: 15rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+    max-height: 70vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    transition: 200ms ease;
+  }
+
+
+  .modal_holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: 400ms ease;
+  }
+  
+  .modal-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 400ms ease;
+  }
+  
+  .modal-exit {
+    transform: translateY(0);
+    opacity: 0;
+    transition: 400ms ease;
+  }
+  
+  .modal-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: 400ms ease;
+  }
+
+.modal-cancel {
+    position: absolute;
+   
+    top: 1rem;
+  
+    right: 2rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 100ms ease;
+    cursor: pointer; 
+    background-color: white;
+    border-radius: 5px;
+    z-index: 400;
+    transition: 100ms ease;
+}
+
+.modal-cancel:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+}
+
+.modal_close {
+    height: 2rem;
+    width: 2rem;
+    color: grey;
+}

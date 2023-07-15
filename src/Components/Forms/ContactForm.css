@@ -14,6 +14,16 @@
     src: url('../../Assets/Fonts/Ripple/Ripple-Medium.otf');
 }
 
+@font-face {
+    font-family: NormalMed;
+    src: url('../../Assets/Fonts/Normal/Normal-Regular.ttf');
+}
+
+@font-face {
+    font-family: NormalBold;
+    src: url('../../Assets//Fonts/Normal/Normal-Bold.ttf');
+}
+
 
 
 .contact-form {
@@ -29,27 +39,43 @@
     letter-spacing: 0px;
 }
 
+
 .contact-form h2 {
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: .5rem;
     text-align: left;
     color: black;
+    font-family: NormalMed;
 }
 
+@media(max-width: 1200px) {
+    .contact-form {
+        width: 100%;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 40rem;
+    }
+    .contact-form h2 {
+        font-size: 2rem;
+    
+    }
+}
 .contact-form p {
     color: rgb(116, 116, 116);
     font-size: 1rem;
     letter-spacing: 0px;
     text-align: left;
     margin-bottom: 2rem;
-    font-family: RippleMed;
+    font-family: NormalMed;
 
 }
 
 .contact-feature {
  margin-bottom: 10px;
- background-color: #a884f2;
+ background-color: #401892;
+ /* background-color: #1FA9B4; */
  width: 13rem;
  border-radius: 5px;
  

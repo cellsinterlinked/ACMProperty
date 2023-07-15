@@ -38,7 +38,7 @@
 
 .resource-head-button {
     border: 2px solid #b08bfb9e;
-    color: #926ae2;
+    color: white;
     padding: 1rem;
     border-radius: 1rem;
     margin-top: 3rem;
@@ -46,6 +46,7 @@
     font-weight: bold;
     transition: 500ms ease;
     cursor: pointer;
+    background: transparent;
 }
 
 .contact-submit-button {
@@ -83,6 +84,10 @@
     letter-spacing: 1px;
     background-color: white;
     transition: 200ms;
+}
+
+@media(max-width: 1200px ){
+    
 }
 
 

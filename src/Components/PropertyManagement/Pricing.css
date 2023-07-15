@@ -1,3 +1,11 @@
+@font-face {
+    font-family: NormalMed;
+    src: url('../../Assets/Fonts/Normal/Normal-Regular.ttf');
+}
+
+
+
+
 .pricing_wrapper {
     min-height: 40rem;
     width: 100%;
@@ -26,6 +34,8 @@
     padding-right: 5rem;
 }
 
+
+
 .price-divider {
     height: 40rem;;
     width: 1px;
@@ -42,6 +52,7 @@
     font-size: 1rem;
     margin-top: 2rem;
     letter-spacing: 1px;
+    font-family: NormalMed;
 }
 
 .price-sub-2 {
@@ -50,6 +61,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
+    font-family: NormalMed;
 }
 
 .price-name {
@@ -85,4 +97,32 @@
     color: rgb(64, 64, 64);
     font-size: 1.2rem;
     letter-spacing: 0px;
+    font-family: NormalMed;
+}
+
+@media(max-width: 1200px) {
+    .pricing_wrapper {
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 3rem;
+
+    }
+    .pricing-inner {
+        flex-wrap: wrap;
+    }
+    .price-column {
+        width: 100%;
+        max-width: 30rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+    }
+    .price-divider {
+        display: none;
+    }
+    .price-detail-text {
+        padding-top: 2rem;
+        height: auto;
+        padding-bottom: 2rem;
+    }
 }

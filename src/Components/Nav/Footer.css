@@ -15,8 +15,20 @@
 }
 
 
+@font-face {
+    font-family: NormalMed;
+    src: url('../../Assets/Fonts/Normal/Normal-Regular.ttf');
+}
 
+@font-face {
+    font-family: NormalBold;
+    src: url('../../Assets//Fonts/Normal/Normal-Bold.ttf');
+}
 
+@font-face {
+    font-family: NormalLight;
+    src: url('../../Assets/Fonts/Normal/Normal-Light.ttf');
+}
 
 
 
@@ -44,8 +56,10 @@
     text-align: left;
 }
 
+
+
 .footer-column h3 {
-font-family: RippleBold;
+font-family: NormalBold;
 font-size: .9rem;
 color: rgb(71, 71, 71);
 margin: 10px;
@@ -53,7 +67,7 @@ margin: 10px;
 }
 
 .footer-column a {
-    font-family: RippleLight;
+    font-family: NormalLight;
     color: rgb(71, 71, 71);
     font-size: .8rem;
     margin: 10px;
@@ -88,4 +102,16 @@ margin: 10px;
 
 .stupid-icon-wrapper {
     background-color: black;
+}
+
+@media(max-width: 1200px) {
+    .footer-column {
+        height: auto;
+        width: 10rem;
+        height: 13rem;
+    }
+    .footer-column-icon {
+        align-items: center;
+        justify-content: center
+    }
 }

@@ -13,6 +13,21 @@
     src: url('../Assets/Fonts/Ripple/Ripple-Medium.otf');
 }
 
+@font-face {
+    font-family: NormalMed;
+    src: url('../Assets/Fonts/Normal/Normal-Regular.ttf');
+}
+
+@font-face {
+    font-family: NormalBold;
+    src: url('../Assets//Fonts/Normal/Normal-Bold.ttf');
+}
+
+@font-face {
+    font-family: NormalLight;
+    src: url('../Assets/Fonts/Normal/Normal-Light.ttf');
+}
+
 
 
 
@@ -30,23 +45,30 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+
 
 }
 
+
 .r-head-box1 {
     padding-top: 4rem;
+    min-width: 30rem;
     width: 30%;
     display: flex;
     align-items: flex-start;;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-
+    
 }
 
 .r-head-sm {
-    font-size: .9rem;
+    
+    font-size: 1rem;
     color: grey;
+    font-family: NormalBold;
 }
 
 .r-head-box1 h2 {
@@ -59,19 +81,24 @@
 .resources-text {
     color: white;
     font-size: 1rem;
-    font-family: RippleMed;
+    font-family: NormalMed;
+    line-height: 1.5rem;
+
 }
 
 .r-head-box2 {
     width: 30%;
+    min-width: 30rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 .bold {
-    font-family: RippleBold;
+    font-family: NormalBold;
+    font-size: 1rem;
 }
 
 .perks-wrapper {
@@ -84,6 +111,7 @@
     padding-left: 20%;
     padding-right: 20%;
 }
+
 
 .forms-wrapper {
     margin-top: 3rem;
@@ -103,7 +131,7 @@
     align-items: flex-start;
     justify-content: center;
     background: var(--gradient)
-
+    
 }
 
 .perks-box {
@@ -148,55 +176,57 @@
 
 
 .perks-box-left {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding-left: 7rem;
-        text-align: left;
-
-    }
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 7rem;
+    text-align: left;
+        
+}
 
 .perks-box h2 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.perks-box  p {
-    font-size: 1rem;
-    margin: 5px;
-}
-
-.perks-box-right {
-    width: 30%;
-    position: relative;
-}
-
-.forms-box-left {
-    width: 30%;
-    position: relative;
-    /* height: 100%; */
-}
-
-.resource-image-box {
-    height: 25rem;
-    width: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin-bottom: auto;
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: -14rem;
-}
-
-.resource-image-box img {
-    min-height: 100%;
-    max-height: 100%;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .perks-box  p {
+        font-size: 1rem;
+        margin: 5px;
+        color: white;
+        font-family: NormalMed;
+    }
+    
+    .perks-box-right {
+        width: 30%;
+        position: relative;
+    }
+    
+    .forms-box-left {
+        width: 30%;
+        position: relative;
+        /* height: 100%; */
+    }
+    
+    .resource-image-box {
+        height: 25rem;
+        width: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-bottom: auto;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -14rem;
+    }
+    
+    .resource-image-box img {
+        min-height: 100%;
+        max-height: 100%;
     object-fit: cover;
 }
 
@@ -229,23 +259,24 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    height: 100%;
 }
 
 .videoThumb {
     position: relative;
-    width: 35rem;
-    height: 22rem;
+    width: 100%;
+    height: auto;
     background: black;
-  }
-  
-  .thumb {
+}
+
+.thumb {
     object-fit: cover;
     width: 100%;
     height: auto;
-  
-  }
-  
-  .playButton {
+    
+}
+
+.playButton {
     border: none;
     box-shadow: none;
     position: absolute;
@@ -258,9 +289,9 @@
     height: 4rem;
     width: 4rem;
     background-color:rgba(110, 110, 110, 0.747)
-  }
-  
-  .triangle {
+}
+
+.triangle {
     margin-left: .8rem;
     width: 33px;
     height: 33px;
@@ -268,4 +299,122 @@
     border-style: solid;
     border-width: 16.5px 0px 16.5px 33px;
     border-color: transparent transparent transparent white;
-  }
+}
+@media(max-width: 1200px) {
+    .resource-head {
+        flex-wrap:wrap;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 3rem;
+    }
+    .r-head-box1 {
+        padding-top: 4rem;
+        width: 100%;
+        min-width: 20rem;
+        height: auto;
+        max-width: 30rem;
+        
+        
+    }
+    .r-head-box2 {
+        width: 100%;
+        height: auto;
+        min-width: 20rem;
+        max-width: 30rem;
+    
+    }
+    
+
+    
+    .o-resources_wrapper {
+        margin-top: 3rem;
+        
+    }
+
+    .perks-box-right {
+        width: 100%;
+        position: relative;
+    }
+
+    .resource-image-box {
+        height: 25rem;
+        width: auto;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin-bottom: auto;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -14rem;
+    }
+    
+    .resource-image-box img {
+        min-height: 100%;
+        max-height: 100%;
+    object-fit: cover;
+}
+}
+    @media(max-width: 1200px) {
+        .perks-wrapper {
+            display: flex;
+            justify-content: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            max-width: 30rem;
+        }
+        .resource-ghost{
+    
+        }
+        .perks-box{
+            width: 100%;
+            padding: 1rem;
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: auto;
+          
+            
+        }
+        .resource-ghost {
+            width: 100;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: var(--gradient)
+            
+        }
+        .perks-box-left{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 0rem;
+            text-align: left;
+    
+        }
+        .perks-box-right{
+    
+        }
+        .resource-image-box{
+    
+        }
+        .perks-box h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            
+        }
+        
+        .perks-box  p {
+            font-size: 1.1rem;
+            margin: 5px;
+            margin-top: 1rem;
+            color: white;
+            font-family: NormalMed
+        }
+    }

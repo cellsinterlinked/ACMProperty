@@ -14,6 +14,10 @@
     src: url('./../Assets/Fonts/Ripple/Ripple-Medium.otf');
 }
 
+@font-face {
+    font-family: NormalMed;
+    src: url('../Assets/Fonts/Normal/Normal-Regular.ttf');
+}
 
 
 .p-management_wrapper {
@@ -34,43 +38,48 @@
     justify-content: center;
 }
 
+
 .p-head-1 {
     width: 50%;
+    max-width: 50rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-
+    min-width: 30rem;
+    
 }
 
 .p-head-2 {
     width: 50%;
     height: 100%;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: left;
     /* border: 1px solid black; */
+    min-width: 30rem;
 }
 
 .p-head-image {
-    width: 35rem;
+    width: 100%;;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     
-
+    
 }
 
 .p-head-image img {
     max-height: 100%;
     min-height: 100%;
     max-width: 100%;
-
+    
     object-fit: cover;
 }
 
@@ -85,10 +94,12 @@
     letter-spacing: 0px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: white;
+    font-family: NormalMed;
 }
 
 .p-head-zazz {
-    background: var(--gradient);
+    background: var(--lightgradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -104,11 +115,11 @@
     display :flex;
     align-items: flex-start;
     justify-content: center;
-
+    
 }
 
 .p-detail {
-    height: 12rem;
+    height: 15rem;
     width: 23rem;
     display: flex;
     padding: 2rem;
@@ -126,17 +137,119 @@
 .p-detail h2 {
     color: black;
     font-size: 1.2rem;
-    height: 50%;
+    /* height: 50%; */
+    margin-bottom: .5rem;
 }
 .p-detail p {
     color: rgb(63, 63, 63);
     letter-spacing: 0px;
     font-size: 1rem;
-    font-family: RippleMed;
+    font-family:  NormalMed;
     height: 50%;
-
+    color: black;
+    
 }
 
 .p-management-pricing {
     height: 40rem;
+}
+
+/* .head-divider-sm {
+    height: 3px;
+    width: 50%;;
+    background: linear-gradient(to left, #1590ba, #80c7e8);
+   
+  } */
+@media(max-width: 1200px) {
+    .p-management-details {
+        flex-wrap: wrap;
+    }
+    .p-management_wrapper {
+        padding-top: 0rem;
+    }
+    .p-management-header {
+        padding-bottom: 2rem;
+        padding-top: 5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .p-head-image {
+        width: 80vw;
+        max-width: 30rem;
+    }
+    .p-head-2 {
+        width: 100%;
+        min-width: 20rem;
+        max-width: 30rem;
+    }
+    .p-head-1 {
+        width: 100%;
+        min-width: 20rem; 
+       
+    
+    }
+    .p-management-header h2 {
+        font-size: 1.8rem;
+        color: white;
+        
+    }
+    
+    .p-management-header p {
+        font-size: 1rem;
+        letter-spacing: 0px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+    .p-head-image img {
+       
+    }
+
+    .p-detail h2 {
+        color: black;
+        font-size: 1.2rem;
+        height: 50%;
+    }
+    .p-detail p {
+        color: rgb(63, 63, 63);
+        letter-spacing: 0px;
+        font-size: 1rem;
+        font-family: NormalMed;
+        height: 50%;
+        color: black;
+        
+    }
+    .p-management-details {
+        position: relative;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        bottom: 0rem;
+        display :flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .p-detail {
+        height:auto;
+        width: 100%;
+        max-width: 23rem;
+        display: flex;
+        padding: 1rem;
+        padding-top: 2rem;
+        flex-direction: column;
+        align-items: flext-start;
+        text-align: left;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0px;
+        margin-right:0px;
+        background-color: white;
+        box-shadow: var(--cardshadow);
+        border-radius: 1.3rem;
+    }
 }

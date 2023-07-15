@@ -27,9 +27,12 @@ const Reviews = () => {
     <div className="reviews-wrapper">
       <img alt="" className="reviews-background" src={background} />
       <div className="reviews-content">
-        <h2>Don't take our word for it.</h2>
-        <p>Hear from some of our clients. </p>
+  <div className="head-ban-wrapper">
+            <h2>Don't take our word for it...</h2>
+            <div className="head-ban-div"></div>
+            <p>Hear from some of our clients. (Clients are not named due to Privacy Agreement)</p>
 
+        </div>
         <div className="review-bubble-wrapper">
           {reviews.map((item, index) => 
           <Review text={item.text} image={item.image} name={item.name}/>

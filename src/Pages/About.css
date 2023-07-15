@@ -3,7 +3,8 @@
     /* background: var(--gradientoff) */
     /* background: linear-gradient(to bottom, #262627, #6c6c6c 70%); */
     min-height: 80vh;
-    background: var(--gradient)
+    /* background: var(--gradient) */
+    background: linear-gradient(to left, #2f1444, #441b98, #2f1444)
 }
 
 .about-header {

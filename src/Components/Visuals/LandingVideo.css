@@ -24,6 +24,11 @@
     src: url('../../Assets/Fonts/Ripple/Ripple-Bold.otf');
 }
 
+@font-face {
+    font-family: 'AmentiMed';
+    src: url('../../Assets//Fonts/Normal/Normal-ExtraLight.ttf')
+}
+
 /* @font-face {
     font-family: 'RippleBold';
     src: url('../../Assets/Fonts/Ripple/Ripple-Light.otf');
@@ -34,9 +39,30 @@
     src: url('../../Assets/Fonts/Ripple/Ripple-Thin.otf');
 }
 
+@font-face {
+    font-family: 'NormalBolder';
+    src: url('../../Assets//Fonts/Normal/Normal-ExtraBold.ttf')
+}
+
+
+@font-face {
+    font-family: 'NormalBold';
+    src: url('../../Assets//Fonts/Normal/Normal-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'NormalMed';
+    src: url('../../Assets//Fonts/Normal/Normal-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'NormalLight';
+    src: url('../../Assets//Fonts/Normal/Normal-Light.ttf')
+}
+
 .landingpage {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +74,7 @@
 
 .video-bg {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -84,10 +110,10 @@
 
 }
 
-h1 {
+.landingpage h1 {
     margin-top: 8rem;
     font-size: 6em;
-    font-family: 'RippleLight';
+    font-family: 'AmentiMed';
     letter-spacing: 3px;
     margin-bottom: 2rem;
     color: rgb(255, 255, 255);
@@ -95,10 +121,11 @@ h1 {
     
 }
 
-p {
+
+.landingpage p {
     justify-self: flex-end;
     font-size:1.7em;
-    font-family: 'RippleBold';
+    font-family: 'AmentiMed';
     letter-spacing: 3px;
     font-weight: 300;
     color: white;
@@ -106,6 +133,17 @@ p {
     
 }
 
+@media(max-width: 1200px) {
+    .landingpage h1 {
+        font-size: 3em
+    }
+    .landingpage p {
+        font-size: 1rem;
+    }
+    .home-text {
+        margin-top: 0px;
+    }
+}
 .home-btn {
     width: 18rem;
     height: 5rem;

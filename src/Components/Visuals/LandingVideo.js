@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./LandingVideo.css";
-import BgVideo from "../../Assets/Video/video1.mp4";
-import NavBar from "../Nav/Navbar";
+import BgVideo from "../../Assets/Video/My Project.mp4";
+
 
 function LandingVideo() {
 

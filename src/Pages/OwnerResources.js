@@ -12,17 +12,17 @@ const OwnerResources = () => {
     <>
 
       <div className="o-resources_wrapper">
-        <div className="resource-head desktop-padding">
+        <div className="resource-head">
           <div className="r-head-box1">
             <p className="r-head-sm">
-              <strong className="bold">RESOURCES</strong>/OWNERS
+              RESOURCES/OWNERS
             </p>
             <h2>Rental Owner Portal</h2>
             <p className="resources-text">
               The Rental Owner portal is a fast, secure and convenient way for
               Rental Owners to manage funds and run reports. Rental Owners will
               have full transparency about everything that goes on with their
-              properties at their finger tips!{" "}
+              properties at their finger tips.
             </p>
             <Button styleType="resource-head-button">Go To Portal</Button>
           </div>
@@ -39,12 +39,13 @@ const OwnerResources = () => {
 
           </div>
         </div>
-
-        <div className="perks-wrapper desktop-padding">
+{/* 
+        <div className="perks-wrapper">
           <div className="resource-ghost">
             <div className="perks-box">
               <div className="perks-box-left">
                 <h2>Perks & Features</h2>
+                <div className="head-divider-sm"></div>
                 <p>- 24/7 Automated Financials</p>
                 <p>- Mobile App</p>
                 <p>- Direct communication with property managers</p>
@@ -57,9 +58,9 @@ const OwnerResources = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="forms-wrapper desktop-padding">
+        {/* <div className="forms-wrapper desktop-padding">
           <div className="resource-ghost">
             <div className="forms-box">
               <div className="forms-box-left">
@@ -75,7 +76,7 @@ const OwnerResources = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div style={{marginBottom: "4rem"}}></div>

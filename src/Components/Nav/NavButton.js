@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const NavButton  = ({children, destination, expand, sub}) => {
     return(
-        <Link to={destination} onClick className="nav-button">
+        <Link to={destination} className="nav-button">
             {children}
             {expand && <BsChevronDown className="nav_chevron-down" />}
             {sub && <SubMenu info={sub} />}

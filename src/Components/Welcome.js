@@ -6,11 +6,12 @@ const Welcome = () => {
   return (
     <div className="welcome_wrapper">
       <div className="welcome_text">
-        <div className="welcome_image-holder">
+        {/* <div className="welcome_image-holder">
           <img alt="" src={welcomeImage}/>
-        </div>
+        </div> */}
         <div>
-        <h2>Welcome to ACM Property Management, LLC</h2>
+        <h2><strong className="text-accent-purple_title">W</strong>elcome to ACM Property Management, LLC</h2>
+        <div className="head-divider"></div>
         <p>
           ACM Property Management is a full-service property management company
           serving Southern Indiana. They pride themselves on their ability to

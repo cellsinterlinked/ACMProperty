@@ -1,7 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import NavBar from "../Components/Nav/Navbar";
-import Footer from "../Components/Nav/Footer";
 import ContactImage from "../Assets/Images/Contact Us.png";
 import Chantz from "../Assets/Images/ChantzNew.e998dcf7.jpeg";
 import Ashlee from "../Assets/Images/AshleeNew.6508e282.jpeg";
@@ -10,7 +8,6 @@ import ContactForm from "../Components/Forms/ContactForm";
 const Contact = () => {
   return (
     <>
-      <NavBar />
       <div className="contact-wrapper">
         <div className="contact-header">
           <div className="contact-head-left">
@@ -63,12 +60,11 @@ const Contact = () => {
               </div>
             </div>
             <div className="contact-right">
-             <ContactForm />
+              <ContactForm />
             </div>
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

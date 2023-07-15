@@ -5,41 +5,43 @@ import Map from "../../Assets/Images/Component 1.png";
 const Areas = () => {
   return (
     <div className="areas-wrapper">
-      <div className="banner">
-        <div className="banner-end"></div>
-        <div className="banner-start-top"></div>
-        <div className="banner-start-bottom"></div>
-        <h1>Areas We Serve...</h1>
-      </div>
-      <div className="areas-content">
-        <div className="areas-shadow">
+
+          <div className="head-ban-wrapper">
+            <h2>Areas We Serve...</h2>
+            <div className="head-ban-div"></div>
+            <p>We serve communities of southeastern and central Indiana. We are always finding ways to adapt to our clients. If your service area is not listed, please contact us</p>
+
+        </div>
+   
           <div className="areas-info">
-            <h2>Counties</h2>
             <ul>
               <li>Johnson</li>
               <li>Brown</li>
               <li>Bartholemew</li>
+              </ul>
+              <ul>
               <li>Jackson</li>
               <li>Shelby</li>
               <li>Decatur</li>
+              </ul>
+              <ul>
               <li>Washington</li>
               <li>Clark</li>
               <li>Scott</li>
+              </ul>
+              <ul>
               <li>Jefferson</li>
               <li>Jennings</li>
               <li>Ripley</li>
             </ul>
-            <p>
-              We are always finding ways to adapt to our clients. If your
-              service areas isnot listed, please contact us.
-            </p>
+           
           </div>
-        </div>
+        {/* </div> */}
 
         <div className="areas-map-wrapper">
           <img alt="" src={Map} />
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };

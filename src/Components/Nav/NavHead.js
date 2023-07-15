@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavHead.css';
 import NavHeadButton from './NavHeadButton';
-import Logo from "../../Assets/Images/Logo2.png";
+import Logo from "../../Assets/Images/Logo1.png";
 
 const NavHead = ({navbar}) => {
     return(

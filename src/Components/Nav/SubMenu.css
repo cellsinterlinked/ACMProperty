@@ -1,3 +1,19 @@
+@font-face {
+    font-family: NormalMed;
+    src: url('../../Assets/Fonts/Normal/Normal-Regular.ttf');
+}
+
+@font-face {
+    font-family: NormalBold;
+    src: url('../../Assets//Fonts/Normal/Normal-Bold.ttf');
+}
+
+@font-face {
+    font-family: NormalLight;
+    src: url('../../Assets/Fonts/Normal/Normal-Light.ttf');
+}
+
+
 .sub-menu {
     width: 18rem;
     background-color: white;
@@ -9,7 +25,7 @@
     justify-content: flex-start;
     height: auto;
     color: #a884f2;
-    top: 6.1em;
+    top: 5.3em;
     border-left: 1px solid rgba(255, 255, 255, 0.247);
     border-right: 1px solid rgba(255, 255, 255, 0.247);
     z-index: 5;
@@ -67,6 +83,8 @@ letter-spacing: 0px;
 /* animation-duration: 500ms; */
 font-size: 1rem;
 text-decoration: none;
+color: black;
+
 
 }
 

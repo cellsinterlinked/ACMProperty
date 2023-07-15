@@ -1,6 +1,7 @@
 import React from "react";
 import "./Pricing.css";
 import Button from "../Reusable/Button";
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   return (
@@ -17,7 +18,9 @@ const Pricing = () => {
               assistance with the most basic components of managing properties
             </p>
           </div>
+          <Link to="/basic">
           <Button styleType="price-button red-button">LEARN MORE</Button>
+          </Link>
         </div>
         <div className="price-divider"></div>
         <div className="price-column">
@@ -31,7 +34,9 @@ const Pricing = () => {
               worry about your portfolio, this package is for you!
             </p>
           </div>
+          <Link to="/premium">
           <Button styleType="price-button standard-button">LEARN MORE</Button>
+          </Link>
         </div>
         <div className="price-divider"></div>
         <div className="price-column">
@@ -45,7 +50,9 @@ const Pricing = () => {
               with tenant needs
             </p>
           </div>
+          <Link to="/standard">
           <Button styleType="price-button green-button">LEARN MORE</Button>
+          </Link>
         </div>
       </div>
     </div>

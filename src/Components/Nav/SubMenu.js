@@ -9,7 +9,7 @@ const SubCategory = ({ icon, title, destination }) => {
       {icon}
       {title}
       <div>
-        <BsArrowRight className="nav-arrow" />
+        <BsArrowRight className="nav-arrow" onClick={() => console.log(title, destination)} />
       </div>
     </Link>
   );
@@ -19,6 +19,7 @@ const SubMenu = ({ info }) => {
     
   return (
     <ul className="sub-menu">
+      
       <div>
         <div className="arrow-up"></div>
       </div>

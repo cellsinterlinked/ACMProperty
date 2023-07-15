@@ -4,7 +4,7 @@ import './Review.css';
 
 const Review = ({name, text, image}) => {
     return(
-        <div className="review-bubble-outline">
+        // <div className="review-bubble-outline">
 
         <div className="review-bubble">
           <div className="bubble-triangle"></div>
@@ -19,7 +19,7 @@ const Review = ({name, text, image}) => {
         </div>
 
 
-      </div>
+      // </div>
     )
 }
 

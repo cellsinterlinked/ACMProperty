@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-import NavBar from "../Components/Nav/Navbar";
-import Footer from "../Components/Nav/Footer";
+
 import Image1 from '../Assets/Images/Home Checking.png';
 
 const About = () => {

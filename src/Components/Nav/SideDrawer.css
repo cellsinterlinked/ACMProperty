@@ -1,0 +1,22 @@
+.sideDrawer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 400;
+    height: 85vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.688);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    display: flex;
+    padding-top: 0rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    backdrop-filter: blur(5px);
+}
+
+/* @media (max-width: 600px) {
+    .sideDrawer {
+      width: 18rem;
+    }
+  } */

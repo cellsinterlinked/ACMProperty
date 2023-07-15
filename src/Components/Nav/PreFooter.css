@@ -25,6 +25,8 @@
     justify-content: center;
     background-color: black;
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .pre-footer-image {
@@ -35,6 +37,7 @@
     justify-content: flex-start;
 
 }
+
 
 .pre-footer-image img {
     min-height: 100%;
@@ -60,9 +63,26 @@
     width: 22rem;
     margin-right: 8rem;
     margin-left: 3rem;
-
+    
 }
 
+@media(max-width: 1200px) {
+
+
+    .pre-footer-image {
+        height: 10rem;
+    }
+    .pre-footer-wrapper h2 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: auto;
+        
+    }
+    .pf-num-wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
 .pf-num-wrapper p {
     font-size: 1rem;
     font-family: RippleMed;

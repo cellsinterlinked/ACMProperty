@@ -2,6 +2,7 @@ import React from "react";
 import "./PropertyManagement.css";
 import PropertyImg from "../Assets/Images/clipboard-with-property-management-agreement-pen-2023-05-19-20-05-48-utc.jpg";
 import Pricing from "../Components/PropertyManagement/Pricing";
+import { Link } from 'react-router-dom';
 
 const PropertyManagement = () => {
   return (
@@ -32,10 +33,12 @@ const PropertyManagement = () => {
           <div className="p-management-details">
             <div className="p-detail">
               <h2>No Hidden Fees</h2>
+              <div className="head-divider-sm"></div>
               <p>Rest assured, no hidden fees are wrapped into our services.</p>
             </div>
             <div className="p-detail">
               <h2>No Contract</h2>
+              <div className="head-divider-sm"></div>
               <p>
                 ACM Property Management LLC wants clients to utilize their
                 services because they are of value, not because of a locked-in
@@ -44,6 +47,7 @@ const PropertyManagement = () => {
             </div>
             <div className="p-detail">
               <h2>Signed Non-Disclosure Agreements</h2>
+              <div className="head-divider-sm"></div>
               <p>
                 The ACM Property Management team signs a legally binding
                 Non-Disclosure Agreement with you. Trust is critial, and your
@@ -52,6 +56,7 @@ const PropertyManagement = () => {
             </div>
             <div className="p-detail">
               <h2>Access to professional software</h2>
+              <div className="head-divider-sm"></div>
               <p>
                 We want the best for you, your tenants, and us. Because of this,
                 we use the industry's leading property management software
