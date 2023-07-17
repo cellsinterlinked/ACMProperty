@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import Image1 from '../../Assets/Images/foot-icon1.png';
-import Image2 from '../../Assets/Images/foot-icon2.png';
-import Image3 from '../../Assets/Images/foot-icon3.png';
-import Image4 from '../../Assets/Images/equal-housing-opportunity-logo-1200w.webp';
+import Image1 from "../../Assets/Images/foot-icon1.png";
+import Image2 from "../../Assets/Images/foot-icon2.png";
+import Image3 from "../../Assets/Images/foot-icon3.png";
+import Image4 from "../../Assets/Images/equal-housing-opportunity-logo-1200w.webp";
 
 const Footer = () => {
   return (
@@ -43,15 +43,10 @@ const Footer = () => {
         <Link>Phone</Link>
         <Link>Email</Link>
       </div>
-      <div className="footer-line">
-
-
-        
-      </div>
+      <div className="footer-line"></div>
       <div className="footer-column-icon">
         <div className="stupid-icon-wrapper">
-        <img alt="" src={Image1} />
-
+          <img alt="" src={Image1} />
         </div>
       </div>
       <div className="footer-column-icon">
@@ -61,7 +56,7 @@ const Footer = () => {
         <img alt="" src={Image3} />
       </div>
       <div className="footer-column-icon">
-        <img alt=""  src={Image4} />
+        <img alt="" src={Image4} />
       </div>
     </div>
   );

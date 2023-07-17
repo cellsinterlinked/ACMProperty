@@ -5,7 +5,6 @@ import HOAContact from "../Components/HOAManagement/HOAContact";
 import HOAList from "../Components/Package/HOAList";
 
 const HaoManagement = () => {
- 
   return (
     <>
       <div className="h-management_wrapper">
@@ -32,6 +31,7 @@ const HaoManagement = () => {
             </div>
           </div>
         </div>
+
         <div className="hoa-pt-2">
           <div className="hoa-services-list">
             <h2>Our HOA Management Services...</h2>
@@ -54,7 +54,6 @@ const HaoManagement = () => {
           </div>
 
           <HOAContact />
-         
         </div>
 
         <div className="hoa-pt3">

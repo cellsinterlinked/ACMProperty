@@ -12,7 +12,6 @@ import TenantScreening from "./TenantScreening";
 import Maintenance from "./Maintenance";
 import LeaseEnforcement from "./LeaseEnforcement";
 
-
 const StandardList = () => {
   return (
     <div className="package_list-wrapper">
@@ -33,7 +32,6 @@ const StandardList = () => {
       <TenantScreening />
       <Maintenance />
       <LeaseEnforcement />
-      
     </div>
   );
 };

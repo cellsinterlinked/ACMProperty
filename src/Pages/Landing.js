@@ -2,7 +2,7 @@ import React from "react";
 
 import LandingVideo from "../Components/Visuals/LandingVideo";
 import Welcome from "../Components/Welcome";
-import Reasons from "../Components/Reaons";
+import Reasons from "../Components/Reasons";
 
 import Glimpse from "../Components/Glimpse";
 import Reviews from "../Components/Reviews/Reviews";

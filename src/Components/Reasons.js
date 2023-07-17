@@ -1,11 +1,5 @@
 import React from "react";
 import "./Reasons.css";
-import { BsShieldFillCheck } from "react-icons/bs";
-import { GiReceiveMoney } from "react-icons/gi";
-import { BsFillSignStopFill } from "react-icons/bs";
-import { GrHostMaintenance } from "react-icons/gr";
-import { AiFillTool } from "react-icons/ai";
-import { GiFreedomDove } from "react-icons/gi";
 import Protection from "../Assets/Images/building-surveyor-wearing-hard-hat-with-clipboard-2021-08-30-08-39-36-utc.jpg";
 import Revenue from "../Assets/Images/money-or-revenue-growth-concept-stacking-coins-an-2022-11-17-22-00-49-utc.jpg";
 import Maintenance from "../Assets/Images/contemporary-young-mechanic-from-household-mainten-2021-09-24-03-09-38-utc.jpg";

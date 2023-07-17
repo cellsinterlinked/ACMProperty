@@ -2,7 +2,7 @@ import React from "react";
 import "./PropertyManagement.css";
 import PropertyImg from "../Assets/Images/clipboard-with-property-management-agreement-pen-2023-05-19-20-05-48-utc.jpg";
 import Pricing from "../Components/PropertyManagement/Pricing";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const PropertyManagement = () => {
   return (

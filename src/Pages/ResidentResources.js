@@ -1,8 +1,9 @@
 import React from "react";
-import "./ResidentResources.css";
+import "./OwnerResources.css";
 import Button from "../Components/Reusable/Button";
 import Image1 from "../Assets/Images/85 - ONLINE PAYMENT.png";
 import Image2 from "../Assets/Images/VNU_M652_02.png";
+import ResourceBox from "../Components/Reusable/ResourceBox";
 
 const ResidentResources = () => {
   const videoToggle = () => {
@@ -39,11 +40,10 @@ const ResidentResources = () => {
           </div>
         </div>
 
-        <div className="perks-wrapper desktop-padding">
-          <div className="resource-ghost">
-            <div className="perks-box">
-              <div className="perks-box-left">
-                <h2>Perks & Features</h2>
+        <div className="resource-list-container">
+          <ResourceBox
+            children={
+              <>
                 <p>
                   - Make cash payments at local stores such as Walmart, Casey's
                   CGVS, Walgreens and more!
@@ -51,33 +51,23 @@ const ResidentResources = () => {
                 <p>- Mobile App</p>
                 <p>- Rent Reporting</p>
                 <p>- Renters Insurance</p>
-              </div>
-              <div className="perks-box-right">
-                <div className="resource-image-box">
-                  <img alt="" src={Image1} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="forms-wrapper desktop-padding">
-          <div className="resource-ghost">
-            <div className="forms-box">
-              <div className="forms-box-left">
-                <div className="resource-image-box2">
-                  <img alt="" src={Image2} />
-                </div>
-              </div>
-              <div className="forms-box-right">
-                <h2>Forms & Guides</h2>
+              </>
+            }
+            image={Image1}
+            title="Perks & Features"
+          />
+          <ResourceBox
+            children={
+              <>
                 <p>- Resident Center Guide</p>
                 <p>- Renters Insurance Guide</p>
                 <p>- Rent Reporting</p>
                 <p>- Notice to Vacate</p>
-              </div>
-            </div>
-          </div>
+              </>
+            }
+            image={Image2}
+            title="Forms & Guides"
+          />
         </div>
       </div>
       <div style={{ marginBottom: "4rem" }}></div>

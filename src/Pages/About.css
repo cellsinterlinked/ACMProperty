@@ -1,27 +1,75 @@
 .about-wrapper {
     padding-top: 11rem;
-    /* background: var(--gradientoff) */
-    /* background: linear-gradient(to bottom, #262627, #6c6c6c 70%); */
+
     min-height: 80vh;
-    /* background: var(--gradient) */
-    background: linear-gradient(to left, #2f1444, #441b98, #2f1444)
+
 }
 
 .about-header {
-    margin-top: 3rem;
+  
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding-left: 20%;
     padding-right: 20%;
     width: 100%;
+    background: var(--gradientoff);
+    min-height: 30rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
 }
+
+.about-head-1 {
+    width: 50%;
+    max-width: 35rem;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.about-head-2 {
+    width: 50%;
+    max-width: 35rem;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+
+
+.about-head-image {
+    width: 30rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-head-image img {
+    object-fit: cover;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 110%;
+    
+}
+
+
+
 
 .about-header h2 {
     font-size: 2.8rem;
-    margin-bottom: 2rem;
     color: white;
+    padding: 0px;
 }
 
 .about-header p {
@@ -29,14 +77,22 @@
     max-width: 60rem;
     line-height: 30px;
     letter-spacing: 1px;
+    font-family: NormalMed;
+    color: white;
+    text-align: left;
+    margin-top: 1rem;
 }
 
 .about-body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
 
 }
+
 
 .about-body-1 {
     display: flex;
@@ -44,7 +100,7 @@
     justify-content: center;
     width: 40rem;
     min-height: 60vh;
-
+    
 }
 
 .about-body-2 {
@@ -57,9 +113,109 @@
     text-align: left;
 }
 
+.about-mobile-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 40rem;
+    min-height: 20rem;
+}
+
+.about-mobile-image img {
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+@media(min-width: 1201px) {
+    .about-mobile-image{
+        display: none;
+    }
+    .about-close {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {
+    .about-close {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-body {
+        padding-bottom: 0px;
+    }
+    .about-header h2 {
+        font-size: 2.2rem;
+        color: white;
+        padding: 0px;
+    }
+    .about-header p {
+        font-size: 1.2rem;
+        max-width: 60rem;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-family: NormalMed;
+        color: white;
+        text-align: left;
+        margin-top: 1rem;
+    }
+    
+    .about-wrapper {
+        padding-top: 4.5rem;
+    }
+    .about-body-1 {
+        display: none;
+    }
+    .about-header {
+  
+        padding-top: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+     
+    }
+
+    .about-head-1 {
+        width: 100%;
+        max-width: 35rem;
+        min-width: 20rem;
+
+        
+    }
+    
+    .about-head-2 {
+        width: 80%;
+        max-width: 30rem;
+        min-width: 20rem;
+  
+        
+    }
+    .about-head-image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-body-2 {
+     
+        width: 100%;
+        max-width: 40rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        min-height: 60vh;
+        text-align: left;
+    }
+    
+}
 .about-body-2 h2 {
     font-size: 2rem;
-    color: white;
+    color: black;
     margin-bottom: 2rem;
 }
 
@@ -67,7 +223,8 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 28px;
-    letter-spacing: 0px;;
+    letter-spacing: 0px;
+    font-family: NormalMed;
 }
 
 .about-image {

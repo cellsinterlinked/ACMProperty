@@ -47,7 +47,7 @@
 
 .pre-footer-wrapper h2 {
     color: white;
-    font-family: RippleBold;
+    font-family: NormalMed;
     font-size: 2.4rem;
     margin-right: 4rem;
 }
@@ -85,8 +85,9 @@
 }
 .pf-num-wrapper p {
     font-size: 1rem;
-    font-family: RippleMed;
+    font-family: NormalMed;
     margin: 5px;
+    color: white
 }
 
 .pf-num-1 {
@@ -107,6 +108,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: 3rem; 
+    color: white;
+    font-family: NormalMed;
 }
 
 .pf-email {

@@ -54,7 +54,7 @@
 .reasons_content p {
     text-align: left;
     letter-spacing: 1px;
-    font-family: RippleMed;
+    font-family: NormalMed;
     max-width: 60rem;
     font-size: 1.3rem;
     line-height: 2rem;;
@@ -114,19 +114,19 @@
 }
 
 .sphere h2 {
-    font-size: 1.3rem;
-    /* font-family: RippleMed; */
+    font-size: 1.2rem;
+    font-family: NormalBold;
     margin: 0px;
     /* margin-bottom: 1rem; */
     color: rgb(21, 21, 21);
     letter-spacing: 1px;
     text-align: center;
-    border-bottom: 1px solid black
+    /* border-bottom: 1px solid black */
 }
 
 .sphere p {
     font-size: 1.1rem;
-    font-family: RippleBold;
+    font-family: NormalMed;
     margin: 0px;
     text-align:center;
     margin-top: 20px;

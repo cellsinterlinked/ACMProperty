@@ -27,7 +27,10 @@ function NavBar() {
 
       <div className="nav_main">
         <NavButton children="HOME" destination="/" />
-        <NavButton children="AVAILABLE UNITS" destination="https://acmpm.managebuilding.com/Resident/public/home" />
+        <NavButton
+          children="AVAILABLE UNITS"
+          destination="https://acmpm.managebuilding.com/Resident/public/home"
+        />
 
         <NavButton
           children="SERVICES"
@@ -36,17 +39,17 @@ function NavBar() {
             {
               title: "Sales",
               icon: <HiOutlineCurrencyDollar className="nav_sub-icon" />,
-              destination:"/sales"
+              destination: "/sales",
             },
             {
               title: "Property Management",
-              icon: <MdManageAccounts className="nav_sub-icon"/>,
-              destination:"/propertymanagement"
+              icon: <MdManageAccounts className="nav_sub-icon" />,
+              destination: "/propertymanagement",
             },
             {
               title: "HOA Management",
               icon: <FaHome className="nav_sub-icon" />,
-              destination:"/hoamanagement"
+              destination: "/hoamanagement",
             },
           ]}
         />
@@ -58,12 +61,12 @@ function NavBar() {
             {
               title: "Resources",
               icon: <RiPagesLine className="nav_sub-icon" />,
-              destination: "/ownerresources"
+              destination: "/ownerresources",
             },
             {
               title: "Rental Owner Portal",
               icon: <GiPortal className="nav_sub-icon" />,
-              destination: "https://acmpm.managebuilding.com/manager/"
+              destination: "https://acmpm.managebuilding.com/manager/",
             },
           ]}
         />
@@ -75,19 +78,20 @@ function NavBar() {
             {
               title: "Resources",
               icon: <RiPagesLine className="nav_sub-icon" />,
-              destination: "/residentresources"
+              destination: "/residentresources",
             },
             {
               title: "Resident Portal",
               icon: <GiPortal className="nav_sub-icon" />,
-              destination: "https://acmpm.managebuilding.com/Resident/portal/login"
+              destination:
+                "https://acmpm.managebuilding.com/Resident/portal/login",
             },
           ]}
         />
 
         <NavButton children="LOCAL SERVICES" destination="/services" />
         <NavButton children="ABOUT US" destination="/about" />
-        <NavButton children="CONTACT US" destination="/contact"/>
+        <NavButton children="CONTACT US" destination="/contact" />
       </div>
     </div>
   );

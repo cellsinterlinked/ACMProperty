@@ -29,7 +29,9 @@ const Standard = () => {
         <div className="p-intro-1">
           <h2 className="included">WHATS INCLUDED</h2>
           <p>
-          Designed for investors hwo want to remain somewhat involved with their portfolio, the standard package lends a helping hand to investors who need some extra help.
+            Designed for investors hwo want to remain somewhat involved with
+            their portfolio, the standard package lends a helping hand to
+            investors who need some extra help.
           </p>
           <p>This package includes the following services</p>
         </div>

@@ -7,7 +7,6 @@ import FinancialReporting from "./FinancialReporting";
 import LeaseRenewal from "./LeaseRenewal";
 import DocumentSigning from "./DocumentSIgning";
 
-
 const BasicList = () => {
   return (
     <div className="package_list-wrapper">
@@ -23,7 +22,6 @@ const BasicList = () => {
       <FinancialReporting />
       <LeaseRenewal />
       <DocumentSigning />
-      
     </div>
   );
 };

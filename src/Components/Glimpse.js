@@ -93,10 +93,13 @@ const Glimpse = () => {
         </div> */}
 
         <div className="head-ban-wrapper">
-            <h2>A Glimpse Into Our Management Services...</h2>
-            <div className="head-ban-div"></div>
-            <p>Our company uses the top technology and expert staff to help you manage everything that goes into your properties or home owner's association</p>
-
+          <h2>A Glimpse Into Our Management Services...</h2>
+          <div className="head-ban-div"></div>
+          <p>
+            Our company uses the top technology and expert staff to help you
+            manage everything that goes into your properties or home owner's
+            association
+          </p>
         </div>
 
         <div className="glimpse-list">
