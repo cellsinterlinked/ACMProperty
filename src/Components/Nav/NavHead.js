@@ -21,7 +21,7 @@ const NavHead = ({ navbar }) => {
         />
         <div className="head-seperate"></div>
         <NavHeadButton
-          children="BOARD MEMBER LOGIN"
+          children="ASSOCIATION OWNER LOGIN"
           destination="https://acmpm.managebuilding.com/manager/"
         />
         <div className="head-seperate"></div>

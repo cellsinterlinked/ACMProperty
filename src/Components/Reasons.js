@@ -4,10 +4,15 @@ import Protection from "../Assets/Images/building-surveyor-wearing-hard-hat-with
 import Revenue from "../Assets/Images/money-or-revenue-growth-concept-stacking-coins-an-2022-11-17-22-00-49-utc.jpg";
 import Maintenance from "../Assets/Images/contemporary-young-mechanic-from-household-mainten-2021-09-24-03-09-38-utc.jpg";
 import Freedom from "../Assets/Images/happy-family-hiking-together-in-autumn-mountains-2022-11-02-02-40-36-utc.jpg";
+import exterior from '../Assets/Images/exterior-residential-apartment-building-2022-06-21-05-45-04-utc.jpg';
 
 const Reasons = () => {
   return (
     <div className="reasons_wrapper">
+      <div className="reasons-backdrop_wrapper">
+        <img alt="" src={exterior} />
+
+      </div>
       <div className="reasons_content">
         <div className="reasons-head">
 
@@ -23,12 +28,12 @@ const Reasons = () => {
 
         <div className="sphere_wrapper">
           <div className="sphere">
-            <div className="reason_image-wrapper">
+            {/* <div className="reason_image-wrapper">
               <img alt="" src={Protection} />
-            </div>
+            </div> */}
             <div className="card-third">
               <h2>Investment Protection</h2>
-              <div className="head-divider"></div>
+              {/* <div className="head-divider"></div> */}
             </div>
             <div className="card-half">
               <p>Protect your invenetment with periodic inspections. </p>
@@ -36,9 +41,9 @@ const Reasons = () => {
           </div>
 
           <div className="sphere">
-            <div className="reason_image-wrapper">
+            {/* <div className="reason_image-wrapper">
               <img alt="" src={Revenue} />
-            </div>
+            </div> */}
             <div className="card-third">
               <h2>Increased Revenue</h2>
             </div>
@@ -48,9 +53,9 @@ const Reasons = () => {
           </div>
 
           <div className="sphere">
-            <div className="reason_image-wrapper">
+            {/* <div className="reason_image-wrapper">
               <img alt="" src={Maintenance} />
-            </div>
+            </div> */}
             <div className="card-third">
               <h2>Preventative Maintenance</h2>
             </div>
@@ -60,9 +65,9 @@ const Reasons = () => {
           </div>
 
           <div className="sphere">
-            <div className="reason_image-wrapper">
+            {/* <div className="reason_image-wrapper">
               <img alt="" src={Freedom} />
-            </div>
+            </div> */}
             <div className="card-third">
               <h2>Freedom</h2>
             </div>

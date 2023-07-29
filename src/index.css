@@ -30,6 +30,10 @@ body {
   
   --lightgradient: linear-gradient(to left, #642198, #7635f7, #642198);
   --gradient: linear-gradient(to left, #2f1444, #441b98, #2f1444);
+/* 
+  --gradient: linear-gradient(to left, #0a063b, #05605d, #0a053b); */
+  
+
   
   --textgradient: linear-gradient(to left, #bfa3f7, #482590 70%);
   
@@ -37,7 +41,8 @@ body {
   
   --greengradient: linear-gradient(to left, #54cf69, #055c0e 70%);
   
-  --gradientoff: linear-gradient(to bottom, #0d0d0d, #2f2c2f 70%);
+  /* --gradientoff: linear-gradient(to bottom, #0d0d0d, #2f2c2f 70%); */
+  --gradientoff: linear-gradient(to bottom, #0d0d0dc8, #2f2c2f8e 70%);
   
   --cardshadow: 2px 2px 4px rgba(0, 0, 0, 0.367);
 
@@ -111,7 +116,25 @@ body {
 
 }
 
+.poly-wrapper {
+  position: absolute;
+  /* height: 100%; */
+  height: 21.7rem;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  z-index: -1;
+}
 
+.poly-wrapper img {
+  object-fit: cover;
+  min-width: 100%;
+  max-width: 300%;
+  min-height: 100%;
+  max-height: 160%;
+}
 
 .head-divider {
   height: 3px;

@@ -91,6 +91,11 @@
     letter-spacing: opx;
    margin: 8px;
    color: rgb(107, 7, 206);
+   /* box-shadow: var(--cardshadow);
+   width: 10rem;
+   border-radius: .5rem;
+   list-style: none;
+   height: 2rem; */
 }
 
 .areas-info p {

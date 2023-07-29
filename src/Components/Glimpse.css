@@ -17,7 +17,6 @@
 
 
 .glimpse-wrapper {
-    /* padding-top: 15rem; */
     background-color: white;
     padding-left: 20%;
     padding-right: 20%;
@@ -48,14 +47,6 @@
     }
 }
 
-/* .glimpse-content h2 {
-    text-align: start;
-    font-size: 2.4rem;
-    color: white;
-    font-weight: 500;
-
-
-} */
 
 .glimpse-list {
     margin-top: 30px;
@@ -113,7 +104,6 @@
     color: black;
     text-align: center;
     font-weight: 600;
-    /* font-family: RippleMed; */
     
 }
 
@@ -147,52 +137,4 @@
         width: 2rem;
     }
 }
-/* .banner {
-    display: flex;
-    align-items: center;
-    padding-left: 8px;
-    padding-right: 8px;
-    height: 100px;
-    width: auto;
-    background: var(--gradient);
-    position: relative;
-}
-
-.banner-end {
-   
-        position: absolute;
-        top: 0rem;
-        right: -5rem;;
-        width: 5rem; 
-        height: 0; 
-        border-top: 50px solid transparent;
-        border-bottom: 50px solid transparent ;
-        
-        border-left: 50px solid #a884f2;
-      
-}
-
-.banner-start-top {
-    position: absolute;
-    top: 0rem;
-    left: -6.2rem;
-    width: 0; 
-    height: 0; 
-    border-right: 50px solid #202344;
-    border-left: 50px solid transparent ;
-    
-    border-bottom: 50px solid transparent;
-}
-
-.banner-start-bottom {
-    position: absolute;
-    bottom: 0rem;
-    left: -6.2rem;
-    width: 0; 
-    height: 0; 
-    border-right: 50px solid #202344;
-    border-left: 50px solid transparent ;
-    
-    border-top: 50px solid transparent;
-} */
 

@@ -1,0 +1,28 @@
+.survey_wrapper {
+min-height: 100vh;
+padding-top: 6rem;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+background-color: rgb(236, 236, 236)
+}
+
+.form-container {
+    padding-top: 10rem;
+    height: 90rem;
+    width: 50rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+ 
+}
+
+@media(max-width: 1200px) {
+    .survey_wrapper {
+        padding-top: 4rem;
+        
+    }
+    .form-container {
+        padding-top: 3rem;
+    }
+}

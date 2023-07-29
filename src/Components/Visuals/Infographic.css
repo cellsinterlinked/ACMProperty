@@ -1,0 +1,146 @@
+.infographic {
+    width: 50rem;
+    padding-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 227, 227);
+}
+
+.infographic-section {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+}
+
+.infographic-line {
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.line-number {
+    height: 2rem;
+    width: 2rem;
+    background: rgb(23, 210, 210);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: NormalBold;
+}
+
+.line-body {
+    height: 100%;
+    width: 2px;
+    background: rgb(23, 210, 210);
+}
+
+.buyer-infographic-box {
+    height: 100%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+.buyer-infographic-box h2 {
+    background: var(--lightgradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-size: 1rem;
+margin-bottom: 2rem;
+text-transform: capitalize;
+
+}
+
+.buyer-infographic-box p {
+color: rgb(57, 57, 57);
+font-family: NormalBold;
+font-size: 1rem;
+text-align: left;
+}
+
+.seller-infographic-box {
+    height: 100%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    padding-top: 4rem;
+   
+}
+
+.seller-infographic-box h2 {
+    background: var(--lightgradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.seller-infographic-box p {
+color: rgb(57, 57, 57);
+font-family: NormalBold;
+font-size: 1rem;
+text-align: left;
+}
+
+@media(max-width: 800px) {
+    .infographic {
+        width: 100%;
+    }
+    .infographic-line {
+        width: 8%;
+    }
+    .buyer-infographic-box {
+       
+        width: 46%;
+     
+   
+        padding-left: 1rem;
+        padding-top: 4rem;
+    }
+    .buyer-infographic-box h2 {
+       font-size: .9rem;
+       
+    }
+    .buyer-infographic-box p {
+       font-size: .9rem;
+       
+    }
+    .seller-infographic-box {
+     
+        width: 46%;
+        padding-right: 1rem;
+        padding-top: 4rem;
+       
+    }
+    .seller-infographic-box h2 {
+        font-size: .9rem;
+        
+     }
+     .seller-infographic-box p {
+        font-size: .9rem;
+        
+     }
+}

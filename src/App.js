@@ -1,21 +1,27 @@
 import "./App.css";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./Pages/Landing";
-import Sales from "./Pages/Sales";
-import Contact from "./Pages/Contact";
-import HoaManagement from "./Pages/HoaManagement";
-import PropertyManagement from "./Pages/PropertyManagement";
-import OwnerResources from "./Pages/OwnerResources";
-import ResidentResources from "./Pages/ResidentResources";
-import About from "./Pages/About";
-import LocalServices from "./Pages/LocalServices";
-import Survey from "./Pages/Survey";
-import Premium from "./Pages/Premium";
 import NavBar from "./Components/Nav/Navbar";
 import Footer from "./Components/Nav/Footer";
-import Basic from "./Pages/Basic";
-import Standard from "./Pages/Standard";
 import MobileNav from "./Components/Nav/MobileNav";
+const LazyLocalServices = React.lazy(() => import("./Pages/LocalServices"));
+const LazyResidentResources = React.lazy(() =>
+import("./Pages/ResidentResources")
+);
+const LazyOwnerResources = React.lazy(() => import("./Pages/OwnerResources"));
+const LazyPropertyManagement = React.lazy(() =>
+import("./Pages/PropertyManagement")
+);
+const LazySales = React.lazy(() => import("./Pages/Sales"));
+const LazyAbout = React.lazy(() => import("./Pages/About"));
+const LazyContact = React.lazy(() => import("./Pages/Contact"));
+const LazySurvey = React.lazy(() => import("./Pages/Survey"));
+const LazyBasic = React.lazy(() => import("./Pages/Basic"));
+const LazyPremium = React.lazy(() => import("./Pages/Premium"));
+const LazyStandard = React.lazy(() => import("./Pages/Standard"));
+const LazyHoaManagement = React.lazy(() => import("./Pages/HoaManagement"));
+
 
 function App() {
   return (
@@ -24,18 +30,114 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/sales" element={<Sales />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/hoamanagement" element={<HoaManagement />} />
-        <Route path="/propertymanagement" element={<PropertyManagement />} />
-        <Route path="/ownerresources" element={<OwnerResources />} />
-        <Route path="/residentresources" element={<ResidentResources />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/localservices" element={<LocalServices />} />
-        <Route path="/survey" element={<Survey />} />
-        <Route path="/premium" element={<Premium />} />
-        <Route path="/basic" element={<Basic />} />
-        <Route path="/standard" element={<Standard />} />
+        <Route
+          path="/sales"
+          element={
+            <React.Suspense>
+              <LazySales />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/contact"
+          element={
+            <React.Suspense>
+              <LazyContact />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/hoamanagement"
+          element={
+            <React.Suspense>
+              <LazyHoaManagement />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/propertymanagement"
+          element={
+            <React.Suspense>
+              <LazyPropertyManagement />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/ownerresources"
+          element={
+            <React.Suspense>
+              <LazyOwnerResources />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/residentresources"
+          element={
+            <React.Suspense>
+              <LazyResidentResources />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/about"
+          element={
+            <React.Suspense>
+              <LazyAbout />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/localservices"
+          element={
+            <React.Suspense>
+              <LazyLocalServices />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/survey"
+          element={
+            <React.Suspense>
+              <LazySurvey />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/premium"
+          element={
+            <React.Suspense>
+              <LazyPremium />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/basic"
+          element={
+            <React.Suspense>
+              <LazyBasic />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
+        <Route
+          path="/standard"
+          element={
+            <React.Suspense>
+              <LazyStandard />
+            </React.Suspense>
+          }
+          fallback="Loading..."
+        />
       </Routes>
       <Footer />
     </div>

@@ -138,3 +138,16 @@
     margin-top: 3rem;
     border: 1px solid white;
 }
+
+.modal1 {
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(129, 24, 205);
+    border-radius: 1rem;
+    transition: 200ms;
+
+}
+
+.modal1:hover {
+    background-color:  rgb(162, 43, 247);
+}

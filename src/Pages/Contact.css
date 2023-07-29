@@ -23,13 +23,16 @@
     padding-left: 20%;
     padding-right: 20%;
     /* background: var(--gradient); */
-    background: linear-gradient(to left, #2f1444, #441b98, #2f1444);
+    /* background: linear-gradient(to left, #2f1444, #441b98, #2f1444); */
+    background: var(--gradientoff);
+   
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
     margin-bottom: 50rem;
- 
+    /* overflow: hidden;
+  */
 
 
 }

@@ -4,12 +4,16 @@ import ContactImage from "../Assets/Images/Contact Us.png";
 import Chantz from "../Assets/Images/ChantzNew.e998dcf7.jpeg";
 import Ashlee from "../Assets/Images/AshleeNew.6508e282.jpeg";
 import ContactForm from "../Components/Forms/ContactForm";
+import poly from '../Assets/Backgrounds/Poly1.jpg'
 
 const Contact = () => {
   return (
     <>
       <div className="contact-wrapper">
         <div className="contact-header">
+          <div className="poly-wrapper">
+            <img alt="" src={poly} />
+          </div>
           <div className="contact-head-left">
             <h2>Contact Us.</h2>
             <p>
@@ -39,7 +43,7 @@ const Contact = () => {
                   <h2>Chantz Morris</h2>
                 </div>
                 <div className="contact-b">
-                  <p>812.592.7785</p>
+                  <p>812.525.0325</p>
                   <p>Chantz.Morris@talktotucker.com</p>
                   <p>License #:RB20001606</p>
                 </div>
@@ -53,7 +57,7 @@ const Contact = () => {
                   <h2>Ashlee Morris</h2>
                 </div>
                 <div className="contact-b">
-                  <p>812.592.0028</p>
+                  <p>812.525.0028</p>
                   <p>Ashlee.Morris@talktotucker.com</p>
                   <p>License #:RB21002818</p>
                 </div>

@@ -20,7 +20,7 @@ const MobileList = ({ toggle }) => {
           >
             Available Units
           </Link>
-          <Link to="/services">Local Services onClick={toggle}</Link>
+          <Link to="/services" onClick={toggle}>Local Services</Link>
         </div>
         <div className="top-list-box">
           <Link to="/about" onClick={toggle}>
@@ -93,7 +93,7 @@ const MobileList = ({ toggle }) => {
             Resident Login
           </Link>
           <Link to="https://acmpm.managebuilding.com/manager/" onClick={toggle}>
-            Board Member Login
+            Association Owner Login
           </Link>
           <Link
             to="https://acmpm.managebuilding.com/Resident/portal/login"

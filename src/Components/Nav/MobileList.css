@@ -53,9 +53,12 @@
 
 .top-list-box a {
 text-decoration: none;
-color: rgb(62, 62, 62);
-line-height: 2rem;
-font-family: NormalBold
+color: rgb(4, 4, 4);
+line-height: 1.5rem;
+font-family: NormalBold;
+padding-bottom: .3rem;
+padding-top: .3rem;
+
 }
 
 .top-list-box h2 {

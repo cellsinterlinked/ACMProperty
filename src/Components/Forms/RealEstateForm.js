@@ -1,19 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import Input from "../Forms/Input";
-import "./HOAContact.css";
+import "../HOAManagement/HOAContact.css";
 import { Button, Modal } from "antd";
 import emailjs from "@emailjs/browser";
 
-const HOAContact = () => {
+const RealEstateForm = () => {
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
-  const [association, setAssociation] = useState("");
+  const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [zip, setZip] = useState("");
-  const [resNum, setResNum] = useState("");
   const [invalid, setInvalid] = useState(false)
   const [modalOpen, setModalOpen] = useState(false);
   const [bModalOpen, setBModalOpen] = useState(false);
@@ -44,19 +43,16 @@ const HOAContact = () => {
       setInvalid(true);
       return;
     }
-    if (association.length < 2) {
-      setInvalid(true);
-      return;
-    }
     if (phone.length < 10) {
-      setInvalid(true);
-      return;
+        setInvalid(true);
+        return;
     }
     if (email.length < 2) {
-      setInvalid(true);
-      return;
+        setInvalid(true);
+        return;
     }
-    if (resNum.length < 2) {
+
+    if (address.length < 2) {
       setInvalid(true);
       return;
     }
@@ -73,7 +69,7 @@ const HOAContact = () => {
       return;
     }
     setInvalid(!valid);
-  }, [first, last, phone, zip.length, city.length, state.length,  email.length, association.length, resNum.length]);
+  }, [first, last, phone, zip.length, city.length, state.length,  email.length, address.length]);
 
 
   const form = useRef();
@@ -96,8 +92,7 @@ const HOAContact = () => {
         setState("")
         setCity("")
         setZip("")
-        setResNum("")
-        setAssociation("")
+        setAddress("")
         setInvalid(true);
         handleSuccessOpen()
         console.log(res.text);
@@ -152,7 +147,7 @@ const HOAContact = () => {
       ></Modal>
       <form className="hoa-form" onSubmit={submitHandler} ref={form} >
         <h3 className="hoa-pizzazz">Direct Email/Contact</h3>
-        <h2>Request a Proposal</h2>
+        <h2>Chat with an ACM Agent today!</h2>
         <p>
           Please fill out all of the inputs below before hitting submit. We will
           be in contact with you as soon as possible.
@@ -173,14 +168,7 @@ const HOAContact = () => {
           onChange={(e) => setLast(e.target.value)}
           styleType="hoa-style"
         />
-        <Input
-          type="text"
-          value={association}
-          name="association"
-          placeholder="Association Name"
-          onChange={(e) => setAssociation(e.target.value)}
-          styleType="hoa-style"
-        />
+     
         <Input
           type="number"
           value={phone}
@@ -195,6 +183,15 @@ const HOAContact = () => {
           name="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
+          styleType="hoa-style"
+        />
+
+<Input
+          type="text"
+          value={address}
+          name="address"
+          placeholder="Address"
+          onChange={(e) => setAddress(e.target.value)}
           styleType="hoa-style"
         />
 
@@ -224,14 +221,7 @@ const HOAContact = () => {
             styleType="hoa-style-sm"
           />
         </div>
-        <Input
-          type="text"
-          value={resNum}
-          name="resNum"
-          placeholder="Number of Residences"
-          onChange={(e) => setResNum(e.target.value)}
-          styleType="hoa-style"
-        />
+      
         {/* <Button styleType="hoa-proposal-button">SUBMIT</Button> */}
         {invalid === false && 
          <Button 
@@ -264,4 +254,4 @@ const HOAContact = () => {
   );
 };
 
-export default HOAContact;
+export default RealEstateForm;

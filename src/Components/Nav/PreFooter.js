@@ -17,8 +17,8 @@ const PreFooter = () => {
           <MdOutlineEmail className="pf-email-icon" />
         </div>
         <div className="pf-num-2">
-          <p>812.592.7785</p>
-          <p>812.592.0028</p>
+          <p>812.525.0325</p>
+          <p>812.525.0028</p>
           <p className="pf-email">Email</p>
         </div>
       </div>

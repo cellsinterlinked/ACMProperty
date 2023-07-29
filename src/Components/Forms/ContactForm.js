@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./ContactForm.css";
 import Input from "./Input";
 import TextArea from "./TextArea";
-import Button from "../Reusable/Button";
+import emailjs from "@emailjs/browser";
+// import Button from "../Reusable/Button";
+import { Button, Modal } from "antd";
 
 const ContactForm = () => {
   const [first, setFirst] = useState("");
@@ -11,6 +13,24 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [invalid, setInvalid] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [bModalOpen, setBModalOpen] = useState(false);
+
+  const handleSuccessCancel = () => {
+    setModalOpen(false);
+  };
+
+  const handleSuccessOpen = () => {
+    setModalOpen(true);
+  };
+
+  const handleFailCancel = () => {
+    setBModalOpen(false);
+  };
+
+  const handleFailOpen = () => {
+    setBModalOpen(true);
+  };
 
   useEffect(() => {
     let valid = true;
@@ -35,10 +55,85 @@ const ContactForm = () => {
       return;
     }
     setInvalid(!valid);
-  }, [first, last, phone, invalid]);
+  }, [first, last, phone, invalid, message.length, email.length]);
+
+  const form = useRef();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE,
+        process.env.REACT_APP_EMAIL_TEMPLATE,
+        form.current,
+        process.env.REACT_APP_EMAIL_USER
+      )
+      .then((res) => {
+        setFirst("");
+        setLast("");
+        setPhone("");
+        setEmail("");
+        setMessage("");
+        setInvalid(true);
+        handleSuccessOpen()
+        console.log(res.text);
+      })
+      .catch((err) => {
+        handleFailOpen()
+        console.log(err.text);
+      });
+  };
 
   return (
-    <div className="contact-form">
+    <form className="contact-form" onSubmit={submitHandler} ref={form}>
+      <Modal
+        title="Success!"
+        open={modalOpen}
+        onOk={handleSuccessCancel}
+        footer={[
+          <Button
+            onClick={handleSuccessCancel}
+            type="primary"
+            key="back"
+            style={{
+              backgroundColor: "#642198",
+            }}
+          >
+            Return
+          </Button>,
+        ]}
+      >
+        <p>
+          Your message has been sent! We will respond as soon as we can, and
+          look forward to speaking with you!
+        </p>
+      </Modal>
+
+      <Modal
+        title="Oops!"
+        open={bModalOpen}
+        onOk={handleSuccessCancel}
+        footer={[
+          <Button
+            onClick={handleFailCancel}
+            type="primary"
+            key="back"
+            style={{
+              backgroundColor: "#642198",
+            }}
+          >
+            Return
+          </Button>,
+        ]}
+      >
+        <p>
+       There was an error sending your message. Please try again later, or contact one of our agents directly!
+        </p>
+      </Modal>
+
+
+
       <div className="contact-feature">
         <p>Direct Email/Contact</p>
       </div>
@@ -89,11 +184,38 @@ const ContactForm = () => {
         styleType="contact-area-style"
         rows={"6"}
       />
-      <Button styleType="contact-submit-button" disabled={invalid}>
-        {"Send Message"}
-      </Button>
-      {/* fix this stupid shit */}
-    </div>
+
+      {invalid === false && 
+         <Button 
+          type="primary"
+          block
+          onClick={submitHandler}
+          style={{
+            backgroundColor: "#642198",
+          }}
+          >
+            Submit
+          </Button> }
+        
+        {invalid === true && 
+         <Button 
+         type="primary"
+         block
+         disabled
+      
+         >
+           Submit
+         </Button>
+        
+        
+        
+        }
+      
+    
+      
+   
+    
+    </form>
   );
 };
 

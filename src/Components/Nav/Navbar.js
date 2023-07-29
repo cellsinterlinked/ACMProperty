@@ -83,13 +83,12 @@ function NavBar() {
             {
               title: "Resident Portal",
               icon: <GiPortal className="nav_sub-icon" />,
-              destination:
-                "https://acmpm.managebuilding.com/Resident/portal/login",
+              destination:"https://acmpm.managebuilding.com/Resident/portal/login",
             },
           ]}
         />
 
-        <NavButton children="LOCAL SERVICES" destination="/services" />
+        <NavButton children="PREFERRED VENDORS" destination="/services" />
         <NavButton children="ABOUT US" destination="/about" />
         <NavButton children="CONTACT US" destination="/contact" />
       </div>
